@@ -5,7 +5,8 @@
         "start": "gridsome develop",
         "build": "gridsome build",
         "develop": "gridsome develop",
-        "explore": "gridsome explore"
+        "explore": "gridsome explore",
+        "styles": "parcel src/styles/index.html"
     },
     "dependencies": {
         "@gridsome/source-wordpress": "^0.3.0",
