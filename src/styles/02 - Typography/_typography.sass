@@ -12,8 +12,9 @@
     /*----------  Define Primary & Secondary Font  ----------*/
 
     /* Note: fonts must be imported in _font */
-    --font-primary: 'IBM Plex Sans', sans
-    --font-secondary: 'IBM Plex Serif', serif
+    --font-primary: 'Open Sans', sans
+    // --font-secondary: 'Adobe Caslon Pro', 'Adobe Caslon Pro Self', serif
+    --font-secondary: 'Lusitana', serif
 
     /* ---------  Vertical Rhythm Grid (used for testing purposes) ----------*/    
     // body
@@ -24,13 +25,15 @@
 html, * 
     font-family: var(--font-primary)
     line-height: 1.6
-    color: var(--color-text-b)
+    color: var(--color-t-b)
 
 b, strong 
     font-weight: bold
 
 h1, h2, h3, h4, h5, h6
-    color: var(--color-text-h)
+    font-family: var(--font-secondary)
+    font-weight: 400
+    color: var(--color-t-h)
 
 
 /*=============================================*/
@@ -39,51 +42,66 @@ h1, h2, h3, h4, h5, h6
 // to maintain vertical rhythm with spacing, use size values of .5rem increments.
 
 h1 
-    @include text(3xl)
-    font-weight: 400
+    @include text(2xl)
+    // font-weight: 400
     line-height: 4rem
     margin-bottom: 1rem //trial
 
 h2 
     @include text(2xl)
-    font-weight: 500
+    font-variant: small-caps 
+    // font-weight: 500
     line-height: 3rem
     margin-bottom: 1rem //trial
 
 h3 
     @include text(xl)
-    font-weight: 500
+    // font-weight: 500
     line-height: 2.5rem
     margin-bottom: .5rem //trial
 
 h4 
     @include text(lg)
-    font-weight: 600
+    // font-weight: 600
     line-height: 2rem
     margin-bottom: .5rem //trial
 
 h5 
     @include text(lg)
-    font-weight: 600
+    font-variant: small-caps 
+    // font-weight: 600
     line-height: 2rem
     margin-bottom: .5rem //trial
 
-h6 
-    @include text(lg)
-    font-weight: 600
-    line-height: 2rem
-    margin-bottom: .5rem //trial
+// h6 
+//     @include text(lg)
+//     font-weight: 600
+//     line-height: 2rem
+//     margin-bottom: .5rem //trial
 
 p, ul
     @include text(md)
-    font-weight: 400
+    font-weight: 300
     max-width: 40em //based on research
     margin-bottom: 1rem
 
-a 
+
+.p-small
+    @include text(sm)
+    font-weight: 400
+
+.p-nav
     @include text(md)
+    font-family: var(--font-secondary)
+
+.p-copyright
+    @include text(sm)
+    font-family: var(--font-secondary)
+    font-variant: small-caps
+
+a 
     text-decoration: none
-    color: var(--color-primary)
+    color: var(--color-p)
     font-weight: 600
 
 
@@ -96,9 +114,8 @@ a
 
 // This can be included in button selectors to style button text
 @mixin text-button 
-    font-family: var(--font-secondary)
     color: var(--color-text-h)
-    font-weight: 500
+    font-weight: 400
     @include text(md)
     letter-spacing: 0.02em
     text-transform: uppercase
@@ -106,8 +123,8 @@ a
 // This can be included in components to add a caption style
 @mixin text-caption 
     font-family: var(--font-secondary)
+    font-variant: small-caps
     color: var(--color-text-caption)
-    font-weight: 600
     @include text(md)
 
 
