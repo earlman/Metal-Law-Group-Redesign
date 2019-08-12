@@ -12,8 +12,9 @@
 
 
 /*----------  Remove Margin on Body and Headings ----------*/
-body, h1, h2, h3, h4, h5, h6
-    margin: 0
+/*----------  Doesn't work with current webpack config (2019-08-11) ----------*/
+// body, h1, h2, h3, h4, h5, h6
+//     margin: 0
 
 /*---------- Use border-box on all elements ------------*/
 *
@@ -22,3 +23,6 @@ body, h1, h2, h3, h4, h5, h6
 /*---------- img max-width 100% on all images ------------*/
 img
     max-width: 100%
+
+nav *
+    list-style: none
