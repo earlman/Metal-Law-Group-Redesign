@@ -1,23 +1,5 @@
 <template>
 	<Layout>
-		<header>
-			<div class="header--additional">
-				<img src alt class="header--searchicon" />
-			</div>
-			<nav>
-				<img src alt="Metal Law Group Logo" class="logo" />
-				<ul>
-					<li>Home</li>
-					<li>Services</li>
-					<li>People</li>
-					<li>Contact</li>
-				</ul>
-			</nav>
-			<div class="header--hero">
-				<!-- Optional Image Prop -->
-				<img src alt />
-			</div>
-		</header>
 		<div class="panelcomponent">
 			<h1>We are a full business law firm with a solid reputation for providing effective and zealous representation.</h1>
 			<button>Contact us for a free initial consultation -></button>
@@ -85,46 +67,6 @@
 				<h5 class="testimonial--job">President Narip</h5>
 			</div>
 		</section>
-		<footer>
-			<nav>
-				<div>
-					<img src alt class="logo" />
-				</div>
-				<div>
-					<h5>Our Services</h5>
-					<ul>
-						<li>Business Litigation</li>
-						<li>Employment Law Defense</li>
-					</ul>
-				</div>
-				<div>
-					<h5>Quick Links</h5>
-					<ul>
-						<li>Disclaimer</li>
-						<li>Privacy Policy</li>
-					</ul>
-				</div>
-				<div>
-					<h5>Contact</h5>
-					<ul>
-						<li>Phone: 323-289-2260</li>
-						<li>Fax: 323-289-2261</li>
-						<li>
-							Address: 725 S Figueroa Street #3065
-							<br />Los Angeles, CA 90017
-						</li>
-					</ul>
-				</div>
-				<div>
-					<ul>
-						<li>Fb</li>
-						<li>Tw</li>
-						<li>Ig</li>
-					</ul>
-				</div>
-			</nav>
-			<aside>© foundations.dev. All Rights Reserved. 2019</aside>
-		</footer>
 	</Layout>
 </template>
 
@@ -161,3 +103,9 @@ export default {
 	}
 };
 </script>
+
+<style lang="sass" scoped>
+
+    
+
+</style>
