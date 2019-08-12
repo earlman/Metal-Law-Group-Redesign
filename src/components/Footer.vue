@@ -5,7 +5,7 @@
 				<img src alt class="logo" />
 				(LOGO)
 			</div>
-			<div class="footer--links">
+			<div class="footer--links p-small">
 				<div>
 					<h5>Our Services</h5>
 					<ul>
@@ -40,7 +40,9 @@
 				</div>
 			</div>
 		</nav>
-		<aside class="copyright">© foundations.dev. All Rights Reserved. 2019</aside>
+		<aside class="copyright p-copyright">
+			<span>© &nbsp foundations.dev. All Rights Reserved. 2019</span>
+		</aside>
 	</footer>
 </template>
 
@@ -65,6 +67,9 @@ export default {};
         nav
             @include grid-main
             justify-items: center
+
+            h5
+                color: var(--color-t-h-alt)
 
         *
             color: white

@@ -53,6 +53,7 @@ h2
     // font-weight: 500
     line-height: 3rem
     margin-bottom: 1rem //trial
+    letter-spacing: 0.03em;
 
 h3 
     @include text(xl)
@@ -72,6 +73,7 @@ h5
     // font-weight: 600
     line-height: 2rem
     margin-bottom: .5rem //trial
+    letter-spacing: 0.03em;
 
 // h6 
 //     @include text(lg)
@@ -86,18 +88,20 @@ p, ul
     margin-bottom: 1rem
 
 
-.p-small
+.p-small p, 
+.p-small li
     @include text(sm)
     font-weight: 400
 
-.p-nav
+.p-nav *
     @include text(md)
     font-family: var(--font-secondary)
 
-.p-copyright
+.p-copyright *
     @include text(sm)
     font-family: var(--font-secondary)
     font-variant: small-caps
+    letter-spacing: 0.03em;
 
 a 
     text-decoration: none

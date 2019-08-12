@@ -3,7 +3,7 @@
 		<div class="header--additional">
 			<img src alt class="header--searchicon" />
 		</div>
-		<nav>
+		<nav class="p-nav">
 			<img src alt="Metal Law Group" class="logo" />
 			<ul>
 				<li>Home</li>
