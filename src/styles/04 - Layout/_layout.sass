@@ -30,7 +30,7 @@
 
 // the template grid 12/6/2 column grid that will show up in each section
 
-@mixin grid-template
+@mixin grid-main
 	width: 88vw // Width of the grid layout 
 	max-width: 1200px
 	margin: auto
@@ -54,10 +54,10 @@
 /*=============================================*/
 /*=         Main Section Definitions           =*/
 /*=============================================*/
-body
-	display: grid
-	@include layout(header, main, footer)
-	grid-template-areas: "header" "main" "footer" // You can change the order of the section here
+// body
+// 	display: grid
+// 	@include layout(header, main, footer)
+// 	grid-template-areas: "header" "main" "footer" // You can change the order of the section here
 
 	// // outline divs for testing
 	// & > *
