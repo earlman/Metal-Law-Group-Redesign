@@ -6,20 +6,20 @@
 		</div>
 		<section>
 			<SectionTitle>Our Services</SectionTitle>
-			<div class="cardgridcomponent">
-				<div class="cardcomponent">
-					<img src alt="icon" />
-					<h3>Business Litigation</h3>
-					<p>We can help you in breach of contract cases, joint partnership ventures gone bad, LLC lawsuits, and other business disputes.</p>
-					<img src alt="arrow icon" />
-				</div>
-				<div class="cardcomponent">
-					<img src alt="icon" />
-					<h3>Employment Defense</h3>
-					<p>We will help you build a strong line of defense to protect your business from the unfair state laws and vindictive former employees.</p>
-					<img src alt="arrow icon" />
-				</div>
-			</div>
+			<CardGrid>
+				<Card>
+					Business Litigation Card
+					<template
+						v-slot:detail
+					>We can help you in breach of contract cases, joint partnership ventures gone bad, LLC lawsuits, and other business disputes.</template>
+				</Card>
+				<Card>
+					Employment Defense
+					<template
+						v-slot:detail
+					>We will help you build a strong line of defense to protect your business from the unfair state laws and vindictive former employees.</template>
+				</Card>
+			</CardGrid>
 		</section>
 		<section>
 			<SectionTitle>Get in Touch</SectionTitle>
@@ -89,12 +89,16 @@ query Home ($page: Int) {
 import { Pager } from "gridsome";
 import Post from "~/components/Post.vue";
 import SectionTitle from "~/components/SectionTitle.vue";
+import Card from "~/components/Card.vue";
+import CardGrid from "~/components/CardGrid.vue";
 
 export default {
 	components: {
 		Pager,
 		Post,
-		SectionTitle
+		SectionTitle,
+		Card,
+		CardGrid
 	},
 	metaInfo: {
 		title: "Welcome to my blog :)"
