@@ -5,7 +5,7 @@
 			<button>Contact us for a free initial consultation &nbsp; &#8594;</button>
 		</div>
 		<section>
-            <SectionTitle />
+			<SectionTitle>Our Services</SectionTitle>
 			<div class="cardgridcomponent">
 				<div class="cardcomponent">
 					<img src alt="icon" />
@@ -22,9 +22,7 @@
 			</div>
 		</section>
 		<section>
-			<div class="panelcomponent">
-				<h2>Get In Touch</h2>
-			</div>
+			<SectionTitle>Get in Touch</SectionTitle>
 			<div class="info">
 				<h5>Phone:</h5>
 				<h5>323-289-2260</h5>
@@ -50,15 +48,15 @@
 			</div>
 		</section>
 		<section>
-			<div class="panelcomponent">
-				<h2>Find a Professional</h2>
-			</div>
-			<input type="search" name id />
+			<SectionTitle>
+				Find a Professional
+				<template v-slot:detail>
+					<input type="search" name id />
+				</template>
+			</SectionTitle>
 		</section>
 		<section>
-			<div class="panelcomponent">
-				<h2>Our Success Stories</h2>
-			</div>
+			<SectionTitle>Our Success Stories</SectionTitle>
 			<div class="testimonialcomponent">
 				<p>“Richard Jefferson is a Mensch and a gentleman who is also well-versed in cutting-edge legal developments that he employs to help his clients, from the large to the very small. He is especially good about looking after the business interests of the ‘little guy’ and is just as well equipped to handle large, complex and far reaching deals.”</p>
 				<h4 class="testimonial--name">Tess Taylor</h4>
@@ -92,13 +90,11 @@ import { Pager } from "gridsome";
 import Post from "~/components/Post.vue";
 import SectionTitle from "~/components/SectionTitle.vue";
 
-
 export default {
 	components: {
 		Pager,
 		Post,
-        SectionTitle
-
+		SectionTitle
 	},
 	metaInfo: {
 		title: "Welcome to my blog :)"

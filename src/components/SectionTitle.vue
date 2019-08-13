@@ -1,8 +1,9 @@
 <template>
 	<div class="section--title">
 		<h2>
-			<slot>Our Services</slot>
+			<slot>Insert Title into Component</slot>
 		</h2>
+		<slot v-if="this.$slots.detail" name="detail"></slot>
 	</div>
 </template>
 
@@ -18,11 +19,12 @@ export default {};
     margin-right: -51vw
     position: relative
     right: 50%
+    border: 1px solid var(--color-a)
 
     h2
         box-sizing: border-box
         padding: var(--space-sm)
-        border: 1px solid var(--color-a)
         text-align: center
         width: 102vw
+        margin: 0
 </style>
