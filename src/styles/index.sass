@@ -74,3 +74,20 @@ button
     line-height: 3 //change the height in a non-buggy way
     padding: 0 1.5rem
     cursor: pointer
+
+
+
+input, textarea
+    transition: color,opacity, border .4s,.4s ease
+    border: 2px solid var(--color-a)
+    border-radius: 3px
+    line-height: 3
+    padding: 0 1rem
+    color: var(--color-t-b)
+
+    &:focus
+        border: 2px solid var(--color-p)
+
+
+@mixin transition
+    transition: color,opacity, border .4s,.4s ease
