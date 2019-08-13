@@ -2,7 +2,7 @@
 	<Layout>
 		<div class="panelcomponent">
 			<h1>We are a full business law firm with a solid reputation for providing effective and zealous representation.</h1>
-			<button>Contact us for a free initial consultation -></button>
+			<button>Contact us for a free initial consultation &nbsp; &#8594;</button>
 		</div>
 		<section>
 			<div class="panelcomponent">
