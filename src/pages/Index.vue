@@ -5,9 +5,7 @@
 			<button>Contact us for a free initial consultation &nbsp; &#8594;</button>
 		</div>
 		<section>
-			<div class="panelcomponent">
-				<h2>Our Services</h2>
-			</div>
+            <SectionTitle />
 			<div class="cardgridcomponent">
 				<div class="cardcomponent">
 					<img src alt="icon" />
@@ -92,11 +90,15 @@ query Home ($page: Int) {
 <script>
 import { Pager } from "gridsome";
 import Post from "~/components/Post.vue";
+import SectionTitle from "~/components/SectionTitle.vue";
+
 
 export default {
 	components: {
 		Pager,
-		Post
+		Post,
+        SectionTitle
+
 	},
 	metaInfo: {
 		title: "Welcome to my blog :)"
