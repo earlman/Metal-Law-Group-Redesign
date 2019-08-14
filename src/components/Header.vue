@@ -38,23 +38,30 @@ export default {};
         &>*
             max-width: 1400px
 
+        &--additional
+            border-bottom: 1px solid var(--color-a)
+            max-width: 100vw
+            width: 100vw
+
         &--menu
             width: 100%
             display: flex
             justify-content: space-around            
+            align-items: center
             flex-wrap: wrap
 
             @include landscape
                 justify-content: space-between
 
             &--logo
-                
+                margin: var(--space-sm) var(--space-md)               
 
             ul
                 display: flex
                 flex-wrap: wrap
                 justify-content: center
                 padding: 0
+                margin: 0
 
             li
                 @include space-inline(var(--space-md))
