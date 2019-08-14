@@ -1,9 +1,11 @@
 <template>
 	<Layout>
-		<div class="panelcomponent">
-			<h1>We are a full business law firm with a solid reputation for providing effective and zealous representation.</h1>
-			<button>Contact us for a free initial consultation &nbsp; &#8594;</button>
-		</div>
+		<section>
+			<div class="panelcomponent page-title">
+				<h1>We are a full business law firm with a solid reputation for providing effective and zealous representation.</h1>
+				<button>Contact us for a free consultation&nbsp;&nbsp;&#8594;</button>
+			</div>
+		</section>
 		<section>
 			<SectionTitle>Our Services</SectionTitle>
 			<CardGrid>
@@ -108,6 +110,17 @@ export default {
 
 <style lang="sass" scoped>
 
-    
+    section
+        padding: var(--space-md) 0
 
+    .page-title
+        display: flex
+        flex-direction: column
+        align-items: center
+        text-align: center
+
+        h1
+            margin-bottom: var(--space-md)
+
+    
 </style>
