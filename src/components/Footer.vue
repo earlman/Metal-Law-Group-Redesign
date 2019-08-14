@@ -63,6 +63,10 @@ export default {};
 
         .footer--links
             grid-column: 1/-1
+            display: flex
+
+            &>*
+                @include space-inline(var(--space-lg))
 
         nav
             @include grid-main
