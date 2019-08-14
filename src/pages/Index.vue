@@ -120,7 +120,7 @@ export default {
         text-align: center
 
         h1
-            margin-bottom: var(--space-md)
+            margin: 0 0 var(--space-md)
 
     .testimonialcomponent
         display: flex
