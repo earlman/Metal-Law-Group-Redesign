@@ -6,8 +6,8 @@
 				<button>Contact us for a free consultation&nbsp;&nbsp;&#8594;</button>
 			</div>
 		</section>
+		<SectionTitle>Our Services</SectionTitle>
 		<section>
-			<SectionTitle>Our Services</SectionTitle>
 			<CardGrid>
 				<Card>
 					Business Litigation Card
@@ -23,8 +23,8 @@
 				</Card>
 			</CardGrid>
 		</section>
-		<section>
-			<SectionTitle>Get in Touch</SectionTitle>
+		<SectionTitle>Get in Touch</SectionTitle>
+		<section class="get-in-touch">
 			<div class="info">
 				<h5>Phone:</h5>
 				<h5>323-289-2260</h5>
@@ -49,20 +49,20 @@
 				</form>
 			</div>
 		</section>
+		<SectionTitle>
+			Find a Professional
+			<template v-slot:detail>
+				<input type="search" name id />
+			</template>
+		</SectionTitle>
+		<SectionTitle>Our Success Stories</SectionTitle>
 		<section>
-			<SectionTitle>
-				Find a Professional
-				<template v-slot:detail>
-					<input type="search" name id />
-				</template>
-			</SectionTitle>
-		</section>
-		<section>
-			<SectionTitle>Our Success Stories</SectionTitle>
 			<div class="testimonialcomponent">
-				<p>“Richard Jefferson is a Mensch and a gentleman who is also well-versed in cutting-edge legal developments that he employs to help his clients, from the large to the very small. He is especially good about looking after the business interests of the ‘little guy’ and is just as well equipped to handle large, complex and far reaching deals.”</p>
-				<h4 class="testimonial--name">Tess Taylor</h4>
-				<h5 class="testimonial--job">President Narip</h5>
+				<div>
+					<p>“Richard Jefferson is a Mensch and a gentleman who is also well-versed in cutting-edge legal developments that he employs to help his clients, from the large to the very small. He is especially good about looking after the business interests of the ‘little guy’ and is just as well equipped to handle large, complex and far reaching deals.”</p>
+					<h4 class="testimonial--name">Tess Taylor</h4>
+					<h5 class="testimonial--job">President Narip</h5>
+				</div>
 			</div>
 		</section>
 	</Layout>
@@ -111,7 +111,7 @@ export default {
 <style lang="sass" scoped>
 
     section
-        padding: var(--space-md) 0
+        padding: var(--space-lg) 0
 
     .page-title
         display: flex
@@ -122,5 +122,17 @@ export default {
         h1
             margin-bottom: var(--space-md)
 
+    .testimonialcomponent
+        display: flex
+        flex-direction: column
+        align-items: center
+        text-align: left
     
+    .get-in-touch
+        display: grid
+        grid-template-columns: 1fr 1fr
+    
+        .form form
+            display: flex
+            flex-direction: column
 </style>
