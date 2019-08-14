@@ -1,10 +1,12 @@
 <template>
-	<header>
+	<header class="header">
 		<div class="header--additional">
 			<img src alt class="header--searchicon" />
 		</div>
-		<nav class="p-nav">
-			<img src alt="Metal Law Group" class="logo" />
+		<nav class="p-nav header--menu">
+			<div class="header--menu--logo">
+				<img src alt="Metal Law Group" class="logo" />
+			</div>
 			<ul>
 				<li>Home</li>
 				<li>Services</li>
@@ -25,10 +27,43 @@ export default {};
 
 <style lang="sass" scoped>
 
-    header
+    .header
         // border: 1px solid blue //* for development, delete later
         justify-self: center
         width: 100vw
+        display: flex
+        flex-direction: column
+        align-items: center
+
+        &>*
+            max-width: 1400px
+
+        &--menu
+            width: 100%
+            display: flex
+            justify-content: space-around            
+            flex-wrap: wrap
+
+            @include landscape
+                justify-content: space-between
+
+            &--logo
+                
+
+            ul
+                display: flex
+                flex-wrap: wrap
+                justify-content: center
+                padding: 0
+
+            li
+                @include space-inline(var(--space-md))
+
+
+
+        &--hero
+            max-width: 1400px
+
 
     .full-bleed
         width: 100vw
