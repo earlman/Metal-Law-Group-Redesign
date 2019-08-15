@@ -94,7 +94,7 @@ export default {};
             @include landscape
                 justify-content: space-between
 
-            &>*
+            .footer--submenu
                 min-width: 200px
                 flex-grow: 1
 
@@ -103,7 +103,7 @@ export default {};
 
         &--social ul
             display: flex
-            min-width: 10ch
+            min-width: 200px
             flex-grow: 2
             justify-content: center
 
