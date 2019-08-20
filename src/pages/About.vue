@@ -1,14 +1,18 @@
 <template>
-  <Layout>
-    <h1>About me</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error doloremque omnis animi, eligendi magni a voluptatum, vitae, consequuntur rerum illum odit fugit assumenda rem dolores inventore iste reprehenderit maxime! Iusto.</p>
-  </Layout>
+	<Layout>
+		<h1>About me</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error doloremque omnis animi, eligendi magni a voluptatum, vitae, consequuntur rerum illum odit fugit assumenda rem dolores inventore iste reprehenderit maxime! Iusto.</p>
+	</Layout>
 </template>
 
 <script>
+import SectionTitle from "~/components/SectionTitle.vue";
+import Card from "~/components/Card.vue";
+import CardGrid from "~/components/CardGrid.vue";
+
 export default {
-  metaInfo: {
-    title: 'About me'
-  }
-}
+	metaInfo: {
+		title: "About me"
+	}
+};
 </script>
