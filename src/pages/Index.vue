@@ -63,11 +63,9 @@
 			<SectionTitle>Our Success Stories</SectionTitle>
 			<section>
 				<div class="testimonialcomponent">
-					<div>
 						<p>“Richard Jefferson is a Mensch and a gentleman who is also well-versed in cutting-edge legal developments that he employs to help his clients, from the large to the very small. He is especially good about looking after the business interests of the ‘little guy’ and is just as well equipped to handle large, complex and far reaching deals.”</p>
 						<h4 class="testimonial--name">Tess Taylor</h4>
 						<h5 class="testimonial--job">President Narip</h5>
-					</div>
 				</div>
 			</section>
 		</main>
