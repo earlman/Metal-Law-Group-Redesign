@@ -4,14 +4,24 @@
 			<img src alt class="header--searchicon" />
 		</div>
 		<nav class="p-nav header--menu">
-			<div class="header--menu--logo">
-				<img src alt="Metal Law Group" class="logo" />
-			</div>
+			<g-link to="/">
+				<div class="header--menu--logo">
+					<img src alt="Metal Law Group" class="logo" />
+				</div>
+			</g-link>
 			<ul>
-				<li>Home</li>
-				<li>Services</li>
-				<li>People</li>
-				<li>Contact</li>
+				<li>
+					<g-link to="/">Home</g-link>
+				</li>
+				<li>
+					<g-link to>What We Do</g-link>
+				</li>
+				<li>
+					<g-link to="/who-we-are">Who We Are</g-link>
+				</li>
+				<li>
+					<g-link to="/contact-us">Contact</g-link>
+				</li>
 			</ul>
 		</nav>
 		<div class="header--hero">
