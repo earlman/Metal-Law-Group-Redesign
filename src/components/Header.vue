@@ -56,6 +56,7 @@ export default {};
             width: 100vw
             display: flex
             justify-content: center
+            padding: var(--space-xs) 0 var(--space-xs)
 
         &--menu
             width: 100%
@@ -63,7 +64,6 @@ export default {};
             justify-content: space-around            
             align-items: center
             flex-wrap: wrap
-            padding-bottom: var(--space-sm)
 
             @include landscape
                 justify-content: space-between
