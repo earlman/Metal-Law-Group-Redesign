@@ -2,6 +2,7 @@
 	<header class="header">
 		<div class="header--additional">
 			<img src alt class="header--searchicon" />
+			(under construction)
 		</div>
 		<nav class="p-nav header--menu">
 			<g-link to="/">
@@ -53,6 +54,8 @@ export default {};
             border-bottom: 1px solid var(--color-a)
             max-width: 100vw
             width: 100vw
+            display: flex
+            justify-content: center
 
         &--menu
             width: 100%
