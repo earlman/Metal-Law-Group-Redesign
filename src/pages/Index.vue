@@ -64,10 +64,10 @@
 				</div>
 				<div>
 					<form class="form">
-						<input type="text" aria-placeholder="name" placeholder="Name" />
-						<input type="tel" aria-placeholder="Phone" placeholder="Phone" />
-						<input type="email" aria-placeholder="Email" placeholder="Email" />
-						<textarea type="Message" aria-placeholder="Message" placeholder="Message"></textarea>
+						<input type="text" aria-placeholder="name" placeholder="Name" class="name" />
+						<input type="tel" aria-placeholder="Phone" placeholder="Phone" class="tel" />
+						<input type="email" aria-placeholder="Email" placeholder="Email" class="email" />
+						<textarea type="Message" aria-placeholder="Message" placeholder="Message" class="message"></textarea>
 					</form>
 				</div>
 			</section>
@@ -149,7 +149,7 @@ export default {
         display: flex
         flex-direction: column
 
-        table
+        .info
             width: 100%
             margin-bottom: var(--space-sm)
 
@@ -160,16 +160,33 @@ export default {
                 text-align: right
     
         .form
-            display: flex
-            flex-direction: column
+            display: grid
+            grid-template-columns: 1fr
             width: 100%
-
-            &>*
-                @include space-stack(var(--space-sm))
+            grid-gap: var(--space-sm)
 
             ::placeholder
                 color: var(--color-t-h-alt)
-                
+
+            textarea
+                height: 30vh
+
+
+        @include lg
+            flex-direction: row
+
+            &>*
+                50vw
+
+            .form
+                grid-template-columns: 1fr 1fr
+
+                .name
+                    grid-column: 1/-1
+
+                .message
+                    grid-column: 1/-1
+                    
 
 
 </style>
