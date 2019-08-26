@@ -37,6 +37,7 @@ export default {};
 
 <style lang="sass" scoped>
 
+
     .header
         // border: 1px solid blue //* for development, delete later
         justify-self: center
@@ -46,7 +47,7 @@ export default {};
         align-items: center
 
         &>*
-            max-width: 1400px
+            max-width: var(--max-width)
 
         &--additional
             border-bottom: 1px solid var(--color-a)
@@ -59,6 +60,7 @@ export default {};
             justify-content: space-around            
             align-items: center
             flex-wrap: wrap
+            padding-bottom: var(--space-sm)
 
             @include landscape
                 justify-content: space-between
@@ -79,7 +81,23 @@ export default {};
 
 
         &--hero
-            max-width: 1400px
+            max-width: var(--max-width)
+            // max-height: 20vh
+            // height: 200px
+            height: 25vh
+            width: 100%
+            position: relative
+            overflow: hidden
+
+            @include md
+                @include landscape
+                    height: 35vh
+
+            img
+                margin: auto
+                position: absolute
+                top: -50%
+                bottom: -50%
 
 
     .full-bleed
