@@ -30,19 +30,40 @@
 			</section>
 			<SectionTitle>Get in Touch</SectionTitle>
 			<section class="get-in-touch">
-				<div class="info">
-					<h5>Phone:</h5>
-					<h5>323-289-2260</h5>
-					<h5>Fax:</h5>
-					<h5>323-289-2261</h5>
-					<h5>Address:</h5>
-					<h5>
-						725 S Figueroa Street #3065
-						<br />Los Angeles, CA 90017
-					</h5>
+				<div>
+					<table class="info">
+						<tr>
+							<td>
+								<h5>Phone:</h5>
+							</td>
+							<td class="info--detail">
+								<h5>323-289-2260</h5>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h5>Fax:</h5>
+							</td>
+							<td class="info--detail">
+								<h5>323-289-2261</h5>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h5>Address:</h5>
+							</td>
+							<td class="info--detail">
+								<h5>
+									725 S Figueroa Street
+									<br />#3065
+									<br />Los Angeles, CA 90017
+								</h5>
+							</td>
+						</tr>
+					</table>
 				</div>
-				<div class="form">
-					<form action>
+				<div>
+					<form class="form">
 						<input type="text" aria-placeholder="name" placeholder="Name" />
 						<input type="tel" aria-placeholder="Phone" placeholder="Phone" />
 						<input type="email" aria-placeholder="Email" placeholder="Email" />
@@ -123,10 +144,32 @@ export default {
         text-align: left
     
     .get-in-touch
-        display: grid
-        grid-template-columns: 1fr 1fr
+        border: 1px solid var(--color-a)
+        padding: var(--space-md) var(--space-sm)
+        display: flex
+        flex-direction: column
+
+        table
+            width: 100%
+            margin-bottom: var(--space-sm)
+
+            *
+                vertical-align: top
+
+            .info--detail
+                text-align: right
     
-        .form form
+        .form
             display: flex
             flex-direction: column
+            width: 100%
+
+            &>*
+                @include space-stack(var(--space-sm))
+
+            ::placeholder
+                color: var(--color-t-h-alt)
+                
+
+
 </style>
