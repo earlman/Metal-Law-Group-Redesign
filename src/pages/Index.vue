@@ -43,14 +43,10 @@
 				</div>
 				<div class="form">
 					<form action>
-						Name
-						<input type="text" />
-						Phone
-						<input type="tel" name id />
-						Email
-						<input type="email" name id />
-						Message
-						<textarea></textarea>
+						<input type="text" aria-placeholder="name" placeholder="Name" />
+						<input type="tel" aria-placeholder="Phone" placeholder="Phone" />
+						<input type="email" aria-placeholder="Email" placeholder="Email" />
+						<textarea type="Message" aria-placeholder="Message" placeholder="Message"></textarea>
 					</form>
 				</div>
 			</section>
