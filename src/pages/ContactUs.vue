@@ -3,8 +3,10 @@
 		<PageTitle>
 			Contact Us
 			<template v-slot:detail>
-				METAL LAW Group moved its Employer Defense practice into the Ernst & Young Plaza in Downtown Los Angeles in February of 2018.
-				This office exclusively practices in the businesses representation areas of employer defense, labor law and commercial litigation.
+				<p>
+					METAL LAW Group moved its Employer Defense practice into the Ernst & Young Plaza in Downtown Los Angeles in February of 2018.
+					This office exclusively practices in the businesses representation areas of employer defense, labor law and commercial litigation.
+				</p>
 			</template>
 		</PageTitle>
 		<section class="contact-info">

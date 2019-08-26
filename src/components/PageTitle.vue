@@ -3,12 +3,9 @@
 		<h1>
 			<slot>Insert Title into Component via Slot</slot>
 		</h1>
-		<slot
-			v-if="this.$slots.detail"
-			name="detail"
-			class="section-title--detail"
-		>Additional content goes into `detail` slot</slot>
-
+		<div class="page-title--detail">
+			<slot v-if="this.$slots.detail" name="detail">Additional content goes into `detail` slot</slot>
+		</div>
 	</div>
 </template>
 
@@ -23,9 +20,22 @@ export default {};
         flex-direction: column
         align-items: center
         text-align: center
+        padding: var(--space-md) 0 var(--space-lg)
+        border: 1px solid var(--color-a)
+        
+
+        // full bleed properties. not sure about it yet
+        left: 50%
+        margin-left: -51vw
+        margin-right: -51vw
+        position: relative
+        right: 50%
+        width: 102vw
 
         h1
-            margin: 0 0 var(--space-md)
+            margin: 0 0 var(--space-sm)
 
+        &--detail p
+            max-width: 75ch
     
 </style>
