@@ -30,13 +30,13 @@ export default {
 
 <style lang="sass">
 body 
-    @include grid-main
+    // @include grid-main
 
 .layout
     display: contents
 
     &>*
-        @include grid-full
+        // @include grid-full
 
 // img 
 //   max-width: 100%

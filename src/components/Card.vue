@@ -1,17 +1,19 @@
 <template>
-	<div class="card">
-		<img src class="card--icon" alt="icon" />
-		<div class="card--info">
-			<h3 class="card--title">
-				<slot>Business Litigation Card</slot>
-			</h3>
-			<p class="card--detail">
-				<slot
-					name="detail"
-				>We can help you in breach of contract cases, joint partnership ventures gone bad, LLC lawsuits, and other business disputes.</slot>
-			</p>
+	<div class="card-wrapper">
+		<div class="card">
+			<img src class="card--icon" alt="icon" />
+			<div class="card--info">
+				<h3 class="card--title">
+					<slot>Business Litigation Card</slot>
+				</h3>
+				<p class="card--detail">
+					<slot
+						name="detail"
+					>We can help you in breach of contract cases, joint partnership ventures gone bad, LLC lawsuits, and other business disputes.</slot>
+				</p>
+			</div>
+			<img src class="card--arrow" alt="arrow" />
 		</div>
-		<img src class="card--arrow" alt="arrow icon" />
 	</div>
 </template>
 
@@ -28,20 +30,36 @@ export default {
 
 <style lang="sass" scoped>
 
-.card
-    // width: 500px //! temporary
+
+.card-wrapper
     border: 1px solid var(--color-a)
+
+    width: 100%
+
+    &:nth-child(odd) .card
+        justify-content: flex-end
+    &:nth-child(even) .card
+        justify-content: flex-start
+
+.card
     display: flex
-    flex-direction: row
-    padding-top: var(--space-lg)
-    padding-bottom: var(--space-lg)
+    padding: var(--space-lg) var(--space-sm)
     
-    &--icon
-        padding-right: var(--space-md)
-        padding-left: var(--space-lg)
+    flex-direction: column
 
     &--title
         margin-bottom: var(--space-sm)
+
+    &--info
+        // flex-grow: 1
+
+    // when there's 2 columns, change the layout. See CardGrid.vue
+    @include md 
+        flex-direction: row
+    
+        &--icon
+            padding: 0 var(--space-sm)
+
 
     &--detail
         max-width: 400px
@@ -51,6 +69,12 @@ export default {
         bottom: -2rem
         align-self: end
         
+
+
+
+
+
+
 
 // .section--title
 //     left: 50%
