@@ -11,10 +11,14 @@
 					</template>
 				</PageTitle>
 			</section>
-			<SectionTitle>Our Services</SectionTitle>
+			<SectionTitle>Our Services </SectionTitle>
 			<section>
 				<CardGrid>
 					<Card>
+                        <Icon
+                            :name="icons.search"
+                        />
+
 						Business Litigation Card
 						<template
 							v-slot:detail
@@ -115,6 +119,8 @@ import SectionTitle from "~/components/SectionTitle.vue";
 import Card from "~/components/Card.vue";
 import CardGrid from "~/components/CardGrid.vue";
 import PageTitle from "~/components/PageTitle.vue";
+import Icon from "~/components/Icon.vue";
+import icons from "~/icons"
 
 export default {
 	components: {
@@ -123,11 +129,16 @@ export default {
 		Post,
 		SectionTitle,
 		Card,
-		CardGrid
+		CardGrid,
+        Icon
 	},
 	metaInfo: {
 		title: "Welcome to my blog :)"
-	}
+	},
+
+    data: () => ({
+        icons
+    })
 };
 </script>
 
