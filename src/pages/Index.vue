@@ -162,8 +162,11 @@ export default {
         .form
             display: grid
             grid-template-columns: 1fr
-            width: 100%
+            max-width: 100%
             grid-gap: var(--space-sm)
+
+            &>*
+                max-width: 100%
 
             ::placeholder
                 color: var(--color-t-h-alt)
@@ -176,7 +179,8 @@ export default {
             flex-direction: row
 
             &>*
-                50vw
+                width: 50vw
+                padding: 0 var(--space-md)
 
             .form
                 grid-template-columns: 1fr 1fr
