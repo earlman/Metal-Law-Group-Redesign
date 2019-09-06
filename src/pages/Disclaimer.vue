@@ -1,7 +1,7 @@
 <template>
 	<Layout>
 		<SectionTitle>Disclaimer</SectionTitle>
-		<section class="disclaimer">
+		<DisplayText class="disclaimer">
 			<p>
 				© 2017, M.E.T.A.L. Law Group, LLP. All Rights Reserved. M.E.T.A.L. is a registered trademark with the United States Patent and Trademark Office.
 				The content included in this website is for informational purposes only and is not for the purpose of providing legal or professional advice. Use of, and access to, this website does not create an attorney-client relationship of any kind with the user.
@@ -10,7 +10,7 @@
 				We practice law only in jurisdictions in which we are properly authorized to do so. We do not seek to represent anyone in any jurisdiction where the website does not comply or is in any way inconsistent with the rules or ethics governing communication of legal services in a particular state.
 				We are unwilling to assume the representation of clients from those states where the materials do not comply with State Bar requirements and where the client is generated as a result of that communication.
 			</p>
-		</section>
+		</DisplayText>
 	</Layout>
 </template>
 
@@ -19,13 +19,15 @@ import SectionTitle from "~/components/SectionTitle.vue";
 import PageTitle from "~/components/PageTitle.vue";
 import Card from "~/components/Card.vue";
 import CardGrid from "~/components/CardGrid.vue";
+import DisplayText from "~/components/DisplayText.vue";
 
 export default {
 	components: {
 		SectionTitle,
 		PageTitle,
 		Card,
-		CardGrid
+		CardGrid,
+		DisplayText
 	}
 };
 </script>
