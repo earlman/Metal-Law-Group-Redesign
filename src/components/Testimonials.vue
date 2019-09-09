@@ -76,7 +76,23 @@ export default {
 					this.testimonials[key].active = false;
 				}
 			}
-		}
+		},
+
+		iterateActive() {
+			let activesection = this.testimonials.filter(x => x.active);
+			let aid = activesection[0].id;
+            this.testimonials[aid].active = false
+            if ((aid+1) == this.testimonials.length) {
+                this.testimonials[0].active = true
+            } else {
+                const x = aid+1
+                this.testimonials[x].active=true
+            }
+        }
+	},
+
+	created() {
+		this.interval = setInterval(() => this.iterateActive(), 5000);
 	}
 };
 </script>
