@@ -124,7 +124,7 @@ export default {
 		Testimonials
 	},
 	metaInfo: {
-		title: "Welcome to my blog :)"
+		title: "Metal Law Group"
 	}
 };
 </script>

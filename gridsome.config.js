@@ -18,8 +18,8 @@ function addStyleResource(rule) {
 }
 
 module.exports = {
-    siteName: 'Gridsome',
-    siteDescription: 'A WordPress starter for Gridsome',
+    siteName: 'Metal Law Group',
+    siteDescription: '',
     plugins: [
         {
             use: '@gridsome/source-wordpress',
