@@ -25,6 +25,7 @@
 					:key="testimonial.id"
 					class="indicator"
 					:class="{ 'active': testimonial.active }"
+					@mouseover="changeActive(testimonial.id)"
 				/>
 			</div>
 		</div>
@@ -37,7 +38,7 @@ export default {
 		return {
 			testimonials: [
 				{
-					id: 1,
+					id: 0,
 					quote:
 						"Richard Jefferson is a Mensch and a gentleman who is also well-versed in cutting-edge legal developments that he employs to help his clients, from the large to the very small. He is especially good about looking after the business interests of the ‘little guy’ and is just as well equipped to handle large, complex and far reaching deals.",
 					name: "Tess Taylor",
@@ -45,7 +46,7 @@ export default {
 					active: false
 				},
 				{
-					id: 2,
+					id: 1,
 					quote:
 						"Richard Jefferson is a Mensch and a gentleman who is also well-versed in cutting-edge legal developments that he employs to help his clients, from the large to the very small. He is especially good about looking after the business interests of the ‘little guy’ and is just as well equipped to handle large, complex and far reaching deals.",
 					name: "David Rosenhaus",
@@ -53,7 +54,7 @@ export default {
 					active: true
 				},
 				{
-					id: 3,
+					id: 2,
 					quote:
 						"Richard Jefferson is a Mensch and a gentleman who is also well-versed in cutting-edge legal developments that he employs to help his clients, from the large to the very small. He is especially good about looking after the business interests of the ‘little guy’ and is just as well equipped to handle large, complex and far reaching deals.",
 					name: "Jasmine Diaz",
@@ -62,6 +63,18 @@ export default {
 				}
 			]
 		};
+	},
+
+	methods: {
+		changeActive(selectedId) {
+			for (var key in this.testimonials) {
+				if (selectedId == this.testimonials[key].id) {
+					this.testimonials[key].active = true;
+				} else {
+					this.testimonials[key].active = false;
+				}
+			}
+		}
 	}
 };
 </script>
