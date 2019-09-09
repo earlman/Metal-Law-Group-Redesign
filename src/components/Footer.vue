@@ -2,8 +2,7 @@
 	<footer class="footer">
 		<nav class="footer--nav">
 			<div class="footer--logo">
-				<img src alt class="logo" />
-				(LOGO)
+				<img src="../images/logo-alt.svg" alt="Metal Law Group Logo" class="logo" />
 			</div>
 			<div class="footer--links p-small">
 				<div class="footer--submenu">
@@ -60,9 +59,13 @@ export default {};
         display: flex
         flex-direction: column
         align-items: center
+        padding-top: var(--space-md)
         
         &>*
             max-width: 1400px
+
+            @include lg
+                padding: 0 6vw
 
         *
             color: white
@@ -80,16 +83,24 @@ export default {};
 
 
         &--logo
-            flex-grow: 1
             text-align: center
-            min-width: 200px
+            width: 300px
+            max-width: 70vw
+            margin-bottom: var(--space-md)
+
+            @include md
+                margin-bottom: var(--space-sm)
+
+            @include lg
+                width: 200px
+                margin-right: var(--space-xl)
 
         &--links
             display: flex
             flex-grow: 4
             justify-content: center
             flex-wrap: wrap
-            max-width: 90vw
+            max-width: 88vw
 
             @include landscape
                 justify-content: space-between
