@@ -123,4 +123,12 @@ export default {
         .active
             background-color: var(--color-p)
 
+
+@keyframes fadein
+    from 
+        opacity: 0
+    to
+        opacity: 1
+
+
 </style>
