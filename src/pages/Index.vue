@@ -79,11 +79,7 @@
 			</SectionTitle>
 			<SectionTitle>Our Success Stories</SectionTitle>
 			<section>
-				<div class="testimonialcomponent">
-					<p>“Richard Jefferson is a Mensch and a gentleman who is also well-versed in cutting-edge legal developments that he employs to help his clients, from the large to the very small. He is especially good about looking after the business interests of the ‘little guy’ and is just as well equipped to handle large, complex and far reaching deals.”</p>
-					<h4 class="testimonial--name">Tess Taylor</h4>
-					<h5 class="testimonial--job">President Narip</h5>
-				</div>
+				<Testimonials></Testimonials>
 			</section>
 		</main>
 	</Layout>
@@ -115,6 +111,7 @@ import SectionTitle from "~/components/SectionTitle.vue";
 import Card from "~/components/Card.vue";
 import CardGrid from "~/components/CardGrid.vue";
 import PageTitle from "~/components/PageTitle.vue";
+import Testimonials from "~/components/Testimonials.vue";
 
 export default {
 	components: {
@@ -123,7 +120,8 @@ export default {
 		Post,
 		SectionTitle,
 		Card,
-		CardGrid
+		CardGrid,
+		Testimonials
 	},
 	metaInfo: {
 		title: "Welcome to my blog :)"
@@ -137,11 +135,7 @@ export default {
         // padding: var(--space-lg) 0
 
 
-    .testimonialcomponent
-        display: flex
-        flex-direction: column
-        align-items: center
-        text-align: left
+
     
     .get-in-touch
         border: 1px solid var(--color-a)
