@@ -131,8 +131,6 @@ export default {
 
 <style lang="sass" scoped>
 
-    section
-        // padding: var(--space-lg) 0
 
 
 
