@@ -12,11 +12,13 @@
 		<div class="testimonials">
 			<div v-for="testimonial in testimonials" :key="testimonial.name">
 				<div class="testimonials--container" v-if="testimonial.active">
-					<div class="testimonials--content">
-						<p class="testimonials--quote">{{testimonial.quote}}</p>
-						<h4 class="testimonials--name">{{testimonial.name}}</h4>
-						<h5 class="testimonials--occupation">{{testimonial.occupation}}</h5>
-					</div>
+					<transition name="fade">
+						<div class="testimonials--content">
+							<p class="testimonials--quote">{{testimonial.quote}}</p>
+							<h4 class="testimonials--name">{{testimonial.name}}</h4>
+							<h5 class="testimonials--occupation">{{testimonial.occupation}}</h5>
+						</div>
+					</transition>
 				</div>
 			</div>
 			<div class="testimonials--selector">
@@ -83,6 +85,16 @@ export default {
 
 .testimonials
 
+    &--container
+        animation: fadein 1s;
+        border-radius: 1px
+        margin: var(--space-lg) auto var(--space-sm)
+        padding: var(--space-md) 0 var(--space-sm)
+        background-color: var(--color-a)
+        max-width: 768px
+        display: flex
+        justify-content: center
+
     &--content
         display: flex
         flex-direction: column
@@ -91,14 +103,6 @@ export default {
 
     &--quote
         margin-bottom: var(--space-md)
-
-    &--container
-        margin: var(--space-lg) auto var(--space-sm)
-        padding: var(--space-md) 0 var(--space-sm)
-        background-color: var(--color-a)
-        max-width: 768px
-        display: flex
-        justify-content: center
 
     &--selector
         display: flex
@@ -109,10 +113,12 @@ export default {
 
 
         .indicator
+            @include transition
             @include space-inline(var(--space-xs))
             height: 5px
             width: 48px
             background-color: var(--color-a)
+            border-radius: 1px
 
         .active
             background-color: var(--color-p)
