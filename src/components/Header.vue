@@ -2,12 +2,12 @@
 	<header class="header">
 		<div class="header--additional">
 			<img src alt class="header--searchicon" />
-			(under construction)
+			<!-- (under construction) -->
 		</div>
 		<nav class="p-nav header--menu">
 			<g-link to="/">
 				<div class="header--menu--logo">
-					<img src alt="Metal Law Group" class="logo" />
+					<img src="../images/logo.svg" alt="Metal Law Group Logo" class="logo" />
 				</div>
 			</g-link>
 			<ul>
@@ -69,7 +69,11 @@ export default {};
                 justify-content: space-between
 
             &--logo
-                margin: var(--space-sm) var(--space-md)               
+                margin: var(--space-md) var(--space-md) var(--space-sm)    
+                max-width: 300px
+
+                @include lg
+                    margin-top: var(--space-lg)
 
             ul
                 display: flex
