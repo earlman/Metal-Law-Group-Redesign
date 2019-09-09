@@ -102,7 +102,7 @@ export default {
 .testimonials
 
     &--container
-        animation: fadein 1s;
+        animation: fadein 1.5s;
         border-radius: 1px
         margin: var(--space-lg) auto var(--space-sm)
         padding: var(--space-md) 0 var(--space-sm)
