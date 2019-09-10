@@ -64,13 +64,12 @@ export default {};
             justify-content: space-around            
             align-items: flex-end
             flex-wrap: wrap
+            width: 88vw
+            max-width: 1400px
 
             @include landscape
                 justify-content: space-between
-                max-width: 92vw
 
-                @include xl
-                    max-width: var(--max-width)
 
             &--logo
                 max-width: 300px
