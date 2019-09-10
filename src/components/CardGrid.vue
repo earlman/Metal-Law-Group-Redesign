@@ -21,7 +21,15 @@ export default {};
     
     @include md
         grid-template-columns: 1fr 44vw 44vw 1fr
+        &>*
+            &:nth-child(odd) 
+                padding-left: 0
+            &:nth-child(even)
+                padding-right: 0
+        
 
+        @include xl
+            grid-template-columns: 1fr 700px 700px 1fr
 
     & > *
         &:nth-child(odd) 

@@ -44,20 +44,22 @@ export default {
 
 
 .card-wrapper
-    // border: 1px solid var(--color-a)
 
     width: 100%
+    padding: var(--space-lg) var(--space-sm) var(--space-md)
 
-    &:nth-child(odd) .card
-        justify-content: flex-end
-    &:nth-child(even) .card
-        justify-content: flex-start
+    // &:nth-child(odd) .card
+    //     justify-content: flex-end
+    // &:nth-child(even) .card
+    //     justify-content: flex-start
+
+
 
 .card
     display: flex
-    padding: var(--space-lg) var(--space-sm) var(--space-md)
     flex-direction: column
     height: 100%
+    justify-content: center
 
     &--title
         margin-bottom: var(--space-sm)
@@ -82,7 +84,7 @@ export default {
     // when there's 2 columns, change the layout. See CardGrid.vue
     @include lg
         flex-direction: row
-        margin: 0 var(--space-lg)
+        margin: 0 var(--space-md)
 
         &--icon
             margin-right: var(--space-md)    

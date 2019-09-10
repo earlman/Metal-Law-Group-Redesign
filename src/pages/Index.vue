@@ -30,46 +30,42 @@
 			</section>
 			<SectionTitle>Get in Touch</SectionTitle>
 			<section class="get-in-touch">
-				<div>
-					<table class="info">
-						<tr>
-							<td>
-								<h5>Phone:</h5>
-							</td>
-							<td class="info--detail">
-								<h5>323-289-2260</h5>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<h5>Fax:</h5>
-							</td>
-							<td class="info--detail">
-								<h5>323-289-2261</h5>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<h5>Address:</h5>
-							</td>
-							<td class="info--detail">
-								<h5>
-									725 S Figueroa Street
-									<br />#3065
-									<br />Los Angeles, CA 90017
-								</h5>
-							</td>
-						</tr>
-					</table>
-				</div>
-				<div>
-					<form class="form">
-						<input type="text" aria-placeholder="name" placeholder="Name" class="name" />
-						<input type="tel" aria-placeholder="Phone" placeholder="Phone" class="tel" />
-						<input type="email" aria-placeholder="Email" placeholder="Email" class="email" />
-						<textarea type="Message" aria-placeholder="Message" placeholder="Message" class="message"></textarea>
-					</form>
-				</div>
+				<table class="info">
+					<tr>
+						<td>
+							<h5>Phone:</h5>
+						</td>
+						<td class="info--detail">
+							<h5>323-289-2260</h5>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h5>Fax:</h5>
+						</td>
+						<td class="info--detail">
+							<h5>323-289-2261</h5>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h5>Address:</h5>
+						</td>
+						<td class="info--detail">
+							<h5>
+								725 S Figueroa Street
+								<br />#3065
+								<br />Los Angeles, CA 90017
+							</h5>
+						</td>
+					</tr>
+				</table>
+				<form class="form">
+					<input type="text" aria-placeholder="name" placeholder="Name" class="name" />
+					<input type="tel" aria-placeholder="Phone" placeholder="Phone" class="tel" />
+					<input type="email" aria-placeholder="Email" placeholder="Email" class="email" />
+					<textarea type="Message" aria-placeholder="Message" placeholder="Message" class="message"></textarea>
+				</form>
 			</section>
 			<SectionTitle>
 				Find a Professional
@@ -147,6 +143,7 @@ export default {
         padding: var(--space-md) var(--space-sm)
         display: flex
         flex-direction: column
+        justify-content: center
 
         .info
             width: 100%
@@ -161,7 +158,6 @@ export default {
         .form
             display: grid
             grid-template-columns: 1fr
-            max-width: 100%
             grid-gap: var(--space-sm)
 
             &>*
@@ -174,15 +170,30 @@ export default {
                 height: 30vh
 
 
+        @include md
+            padding: var(--space-md) var(--space-lg)
+
+
         @include lg
-            flex-direction: row
+            display: grid
+            grid-template-columns: 1fr 44vw 44vw 1fr
+            padding-top: var(--space-lg)
 
             &>*
-                width: 50vw
+                
                 padding: 0 var(--space-md)
+
+            .info
+                padding-left: var(--space-sm)
+                justify-self: end
+                max-width: 600px
+
 
             .form
                 grid-template-columns: 1fr 1fr
+                padding-right: var(--space-sm)
+                max-width: 600px
+
 
                 .name
                     grid-column: 1/-1
@@ -191,5 +202,8 @@ export default {
                     grid-column: 1/-1
                     
 
+            &::before,
+            &::after
+                content: ''
 
 </style>
