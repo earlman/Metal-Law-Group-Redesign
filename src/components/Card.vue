@@ -1,7 +1,8 @@
 <template>
 	<div class="card-wrapper">
 		<div class="card">
-			<img src class="card--icon" alt="icon" />
+			<Icon :name="iconname" size="32pt" class="card--icon" />
+
 			<div class="card--info">
 				<h3 class="card--title">
 					<slot>Business Litigation Card</slot>
@@ -13,20 +14,29 @@
 				</p>
 			</div>
 			<div class="card--arrow">
-				<img src alt="arrow" />
+				<Icon :name="icons.continue" size="20pt" />
 			</div>
 		</div>
 	</div>
 </template>
 
 <script>
+import Icon from "~/components/Icon.vue";
+import icons from "~/icons.js";
+
 export default {
+	components: {
+		Icon
+	},
 	props: {
-		icon: {
-			type: String,
-			default: "hi"
+		iconname: {
+			type: Object,
+			default: {}
 		}
-	}
+	},
+	data: () => ({
+		icons
+	})
 };
 </script>
 
@@ -66,6 +76,8 @@ export default {
 
     &--icon
         margin-bottom: var(--space-xs)
+        width: 40px
+
 
     // when there's 2 columns, change the layout. See CardGrid.vue
     @include lg

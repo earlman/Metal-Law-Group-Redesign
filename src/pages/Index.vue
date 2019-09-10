@@ -14,13 +14,13 @@
 			<SectionTitle>Our Services</SectionTitle>
 			<section>
 				<CardGrid>
-					<Card>
-						<Icon :name="icons.search" />Business Litigation Card
+					<Card :iconname="icons.policies4">
+						Business Litigation
 						<template
 							v-slot:detail
 						>We can help you in breach of contract cases, joint partnership ventures gone bad, LLC lawsuits, and other business disputes.</template>
 					</Card>
-					<Card>
+					<Card :iconname="icons.defense">
 						Employment Defense
 						<template
 							v-slot:detail
@@ -113,7 +113,7 @@ import CardGrid from "~/components/CardGrid.vue";
 import PageTitle from "~/components/PageTitle.vue";
 import Testimonials from "~/components/Testimonials.vue";
 import Icon from "~/components/Icon.vue";
-import icons from "~/icons";
+import icons from "~/icons.js";
 
 export default {
 	components: {
@@ -124,7 +124,7 @@ export default {
 		Card,
 		CardGrid,
 		Testimonials,
-		Icons
+		Icon
 	},
 	metaInfo: {
 		title: "Metal Law Group"
