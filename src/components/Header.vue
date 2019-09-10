@@ -91,11 +91,12 @@ export default {};
 
 
         &--hero
-            max-width: var(--max-width)
+            // max-width: var(--max-width)
             // max-height: 20vh
             // height: 200px
             height: 25vh
-            width: 100%
+            width: 100vw
+            max-width: 100vw
             position: relative
             overflow: hidden
 
@@ -108,6 +109,7 @@ export default {};
                 position: absolute
                 top: -50%
                 bottom: -50%
+                width: 100%
 
 
     .full-bleed
