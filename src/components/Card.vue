@@ -31,7 +31,7 @@ export default {
 	props: {
 		iconname: {
 			type: Object,
-			default: {}
+			default: icons.search
 		}
 	},
 	data: () => ({
@@ -44,7 +44,7 @@ export default {
 
 
 .card-wrapper
-    border: 1px solid var(--color-a)
+    // border: 1px solid var(--color-a)
 
     width: 100%
 
