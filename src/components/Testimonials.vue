@@ -81,14 +81,14 @@ export default {
 		iterateActive() {
 			let activesection = this.testimonials.filter(x => x.active);
 			let aid = activesection[0].id;
-            this.testimonials[aid].active = false
-            if ((aid+1) == this.testimonials.length) {
-                this.testimonials[0].active = true
-            } else {
-                const x = aid+1
-                this.testimonials[x].active=true
-            }
-        }
+			this.testimonials[aid].active = false;
+			if (aid + 1 == this.testimonials.length) {
+				this.testimonials[0].active = true;
+			} else {
+				const x = aid + 1;
+				this.testimonials[x].active = true;
+			}
+		}
 	},
 
 	created() {
@@ -105,7 +105,7 @@ export default {
         animation: fadein 1.5s;
         border-radius: 1px
         margin: var(--space-lg) auto var(--space-sm)
-        padding: var(--space-md) 0 var(--space-sm)
+        padding: var(--space-md) 6vw var(--space-sm)
         background-color: var(--color-a)
         max-width: 768px
         display: flex
@@ -119,6 +119,7 @@ export default {
 
     &--quote
         margin-bottom: var(--space-md)
+        
 
     &--selector
         display: flex
