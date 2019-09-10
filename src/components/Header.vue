@@ -5,11 +5,11 @@
 			<!-- (under construction) -->
 		</div>
 		<nav class="p-nav header--menu">
-			<g-link to="/">
-				<div class="header--menu--logo">
+			<div class="header--menu--logo">
+				<g-link to="/">
 					<img src="../images/logo.svg" alt="Metal Law Group Logo" class="logo" />
-				</div>
-			</g-link>
+				</g-link>
+			</div>
 			<ul>
 				<li>
 					<g-link to="/">Home</g-link>
@@ -62,29 +62,33 @@ export default {};
             width: 100%
             display: flex
             justify-content: space-around            
-            align-items: center
+            align-items: flex-end
             flex-wrap: wrap
 
             @include landscape
                 justify-content: space-between
+                max-width: 92vw
+
+                @include xl
+                    max-width: var(--max-width)
 
             &--logo
-                margin: var(--space-md) var(--space-md) var(--space-sm)    
                 max-width: 300px
+                margin-bottom: var(--space-sm)
+                margin-top: var(--space-md)
 
-                @include lg
-                    margin-top: var(--space-lg)
 
+                
             ul
                 display: flex
                 flex-wrap: wrap
                 justify-content: center
                 padding: 0
-                margin: 0
+                margin-bottom: var(--space-sm)
+                
 
             li
-                @include space-inline(var(--space-md))
-
+                @include space-inline(var(--space-sm))
 
 
         &--hero
