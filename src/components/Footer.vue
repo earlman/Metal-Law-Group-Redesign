@@ -109,7 +109,7 @@ export default {
                 margin-bottom: var(--space-sm)
 
             @include lg
-                width: 250px
+                width: 200px
                 margin-right: var(--space-xl)
 
         &--links
