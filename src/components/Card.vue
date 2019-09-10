@@ -1,7 +1,7 @@
 <template>
 	<div class="card-wrapper">
 		<div class="card">
-			<Icon :name="iconname" size="32pt" class="card--icon" />
+			<Icon :name="iconname" size="32pt" class="card--icon" color="var(--color-p)" />
 
 			<div class="card--info">
 				<h3 class="card--title">
