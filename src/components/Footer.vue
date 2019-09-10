@@ -32,9 +32,15 @@
 				</div>
 				<div class="footer--social">
 					<ul>
-						<li>Fb</li>
-						<li>Tw</li>
-						<li>Ig</li>
+						<li>
+							<Icon :name="icons.twitter" size="16pt" color="white" />
+						</li>
+						<li>
+							<Icon :name="icons.linkedin" size="16pt" color="white" />
+						</li>
+						<li>
+							<Icon :name="icons.facebook" size="16pt" color="white" />
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -46,7 +52,18 @@
 </template>
 
 <script>
-export default {};
+import Icon from "~/components/Icon.vue";
+import icons from "~/icons.js";
+
+export default {
+	components: {
+		Icon
+	},
+
+	data: () => ({
+		icons
+	})
+};
 </script>
 
 <style lang="sass" scoped>
@@ -92,7 +109,7 @@ export default {};
                 margin-bottom: var(--space-sm)
 
             @include lg
-                width: 200px
+                width: 250px
                 margin-right: var(--space-xl)
 
         &--links
@@ -101,6 +118,7 @@ export default {};
             justify-content: center
             flex-wrap: wrap
             max-width: 88vw
+            margin-bottom: var(--space-sm)
 
             @include landscape
                 justify-content: space-between
@@ -124,4 +142,5 @@ export default {};
         .copyright
             @include grid-full
             text-align: center
+            margin-bottom: var(--space-xs)
 </style>
