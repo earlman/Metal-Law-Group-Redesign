@@ -5,7 +5,7 @@
 				<slot>Insert Title into Component via Slot</slot>
 			</h1>
 			<div class="page-title--detail">
-				<slot v-if="this.$slots.detail" name="detail">Additional content goes into `detail` slot</slot>
+				<slot name="detail">Additional content goes into `detail` slot</slot>
 			</div>
 		</div>
 	</div>
