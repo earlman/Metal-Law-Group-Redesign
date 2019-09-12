@@ -9,27 +9,27 @@
 		<SectionTitle>Overview</SectionTitle>
 		<section class="overview">
 			<CardGrid>
-				<Card>
+				<Card :iconname="icons.partnerdisputes">
 					Partnership Disputes
 					<template
 						v-slot:detail
 					>A Partnership Dispute can stop your business in its tracks. We can represent you and make sure your rights and interests are being protected.</template>
 				</Card>
-				<Card>
+				<Card :iconname="icons.fiduciaryduty">
 					Breach of Contract
 					<template
 						v-slot:detail
 					>A breach of contract can lead to litigation and that can prove costly. We can help get the matter resolved in your best interest and as quickly as possible.</template>
 				</Card>
 				<div />
-				<div />
-				<Card>
+				<div />  
+				<Card :iconname="icons.contract">
 					Breach of Fiduciary Duty
 					<template
 						v-slot:detail
 					>Partners of business could claim they were harmed in a business transaction and could sue to obtain their fair share of the benefits they should have received. The partner claiming the alleged breach of fiduciary duty hs the burden of proof in a claim. We can help defend you against a claim or help prove a claim on your behalf against a partner.</template>
 				</Card>
-				<Card>
+				<Card :iconname="icons.corporatedisputes">
 					Corporate Disputes
 					<template
 						v-slot:detail
@@ -64,6 +64,7 @@ import Card from "~/components/Card.vue";
 import CardGrid from "~/components/CardGrid.vue";
 import DisplayText from "~/components/DisplayText.vue";
 import Testimonials from "~/components/Testimonials.vue";
+import icons from "~/icons.js";
 
 export default {
 	components: {
@@ -73,7 +74,11 @@ export default {
 		CardGrid,
 		DisplayText,
 		Testimonials
-	}
+	},
+
+	data: () => ({
+		icons
+	})
 };
 </script>
 
