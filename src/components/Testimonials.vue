@@ -104,12 +104,20 @@ export default {
     &--container
         animation: fadein 1.5s;
         border-radius: 1px
-        margin: var(--space-lg) auto var(--space-sm)
+        margin: var(--space-lg) 0 var(--space-sm)
         padding: var(--space-md) 6vw var(--space-sm)
         background-color: var(--color-a)
         max-width: 768px
         display: flex
         justify-content: center
+        
+        @include md
+            margin-left: var(--space-lg)
+            margin-right: var(--space-lg)
+
+            @include lg
+                margin-left: auto
+                margin-right: auto
 
     &--content
         display: flex
