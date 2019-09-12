@@ -37,14 +37,17 @@ export default {};
 
         &--inner
             max-width: 88vw
-
+            display: flex
+            align-items: center
+            flex-direction: column
 
         h1
             margin: 0 0 var(--space-sm)
             // max-width: 88vw
 
-        &--detail p
+        &--detail
             max-width: 75ch
+
             
     
 </style>
