@@ -8,7 +8,7 @@
 		</PageTitle>
 		<SectionTitle>Overview</SectionTitle>
 		<section class="overview">
-			<div class="youtube-link"></div>
+			<div class="overview--youtube">youtube video goes here</div>
 			<p>
 				We focus our practice on employment law defense and ONLY representing and protecting California Employers!
 				If you are have a business in California and are having any issues with employees you have come to the right place.
@@ -17,13 +17,13 @@
 		<SectionTitle>Services</SectionTitle>
 		<section class="services">
 			<CardGrid>
-				<Card>
+				<Card :iconname="icons.laborlawsuits">
 					Labor Lawsuits / Litigation
 					<template
 						v-slot:detail
 					>We can handle the litigation for you in superior or federal court. Since we only defend employers we have developed aggressive tactics to bring favorable results for our clients.</template>
 				</Card>
-				<Card>
+				<Card :iconname="icons.defense">
 					Labor Board Defense
 					<template
 						v-slot:detail
@@ -31,13 +31,13 @@
 				</Card>
 				<div />
 				<div />
-				<Card>
+				<Card :iconname="icons.workerscomp">
 					Workers Comp Claims
 					<template
 						v-slot:detail
 					>Did one of your (ex)workers make a Workmen’s Compensation Claim against your business and you were not insured at the time? This could be trouble as this insurance is mandatory. Contact us and we can help minimize the damage.</template>
 				</Card>
-				<Card>
+				<Card :iconname="icons.policies">
 					Policies and Procedures
 					<template
 						v-slot:detail
@@ -46,13 +46,13 @@
 				<div />
 				<div />
 
-				<Card>
+				<Card :iconname="icons.harassment">
 					Sexual Harassment Defense
 					<template
 						v-slot:detail
 					>There are two sides to every story. We help you defend against sexual harassment claims and work to make the problem go away as quickly and discreetly as possible.</template>
 				</Card>
-				<Card>
+				<Card :iconname="icons.termination">
 					Firing and Termination Help
 					<template
 						v-slot:detail
@@ -62,21 +62,19 @@
 		</section>
 		<SectionTitle>Employee Lawsuit Prevention</SectionTitle>
 		<section class="employee-lawsuit-prevention">
-			<p>
-				When it comes to employee issues, avoiding a lawsuit in the first place is always the first choice. Right or wrong if your business gets sued, you’ve already lost. Why? Because even if best case scenario you “win,”the case you will still have pay your lawyers to defend you and spend valuable time away from your business and family to prove you are right.
-				This is the best case scenario.
-				If you lose, you pay your attorneys, the damages awarded to the employee AND, worst of all, the employees attorneys!
-				Yes you read that right. If you lose you have to pay the bills for the attorneys on the other side which is usually the biggest expense in all of this.
-				We help you avoid employee problems in the first place before they become full blown devastating lawsuits. We have developed tactics to not only help keep you out of court but also put some pressure back on the employees so you are not always the one on the defensive.
-			</p>
+			<DisplayText>
+				<p>
+					When it comes to employee issues, avoiding a lawsuit in the first place is always the first choice. Right or wrong if your business gets sued, you’ve already lost. Why? Because even if best case scenario you “win,”the case you will still have pay your lawyers to defend you and spend valuable time away from your business and family to prove you are right.
+					This is the best case scenario.
+					If you lose, you pay your attorneys, the damages awarded to the employee AND, worst of all, the employees attorneys!
+					Yes you read that right. If you lose you have to pay the bills for the attorneys on the other side which is usually the biggest expense in all of this.
+					We help you avoid employee problems in the first place before they become full blown devastating lawsuits. We have developed tactics to not only help keep you out of court but also put some pressure back on the employees so you are not always the one on the defensive.
+				</p>
+			</DisplayText>
 		</section>
 		<SectionTitle>Our Success Stories</SectionTitle>
 		<section class="our-success-stories">
-			<div class="testimonialcomponent">
-				<p>“Richard Jefferson is a Mensch and a gentleman who is also well-versed in cutting-edge legal developments that he employs to help his clients, from the large to the very small. He is especially good about looking after the business interests of the ‘little guy’ and is just as well equipped to handle large, complex and far reaching deals.”</p>
-				<h4 class="testimonial--name">Tess Taylor</h4>
-				<h5 class="testimonial--job">President Narip</h5>
-			</div>
+			<Testimonials />
 		</section>
 	</Layout>
 </template>
@@ -86,18 +84,41 @@ import SectionTitle from "~/components/SectionTitle.vue";
 import PageTitle from "~/components/PageTitle.vue";
 import Card from "~/components/Card.vue";
 import CardGrid from "~/components/CardGrid.vue";
+import DisplayText from "~/components/DisplayText.vue";
+import Testimonials from "~/components/Testimonials.vue";
+import icons from "~/icons.js";
 
 export default {
 	components: {
 		SectionTitle,
 		PageTitle,
 		Card,
-		CardGrid
-	}
+		CardGrid,
+		DisplayText,
+		Testimonials
+	},
+
+	data: () => ({
+		icons
+	})
 };
 </script>
 
 <style lang="sass" scoped>
-    
+    .overview
+        padding-top: var(--space-lg) 
+        padding-bottom: var(--space-md) 
+        margin: auto
+        max-width: 88vw
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
 
+        &--youtube
+            border: 3px solid var(--color-a)
+            color: var(--color-a)
+            height: 100px
+            width: 300px
+            text-align: center
+            margin: 0 var(--space-md) var(--space-md) 
 </style>
