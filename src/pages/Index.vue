@@ -15,7 +15,7 @@
 			<section>
 				<CardGrid>
 					<Card :iconname="icons.policies4">
-						Business Litigation
+						Business & Commercial Litigation
 						<template
 							v-slot:detail
 						>We can help you in breach of contract cases, joint partnership ventures gone bad, LLC lawsuits, and other business disputes.</template>
@@ -148,6 +148,11 @@ export default {
         .info
             width: 100%
             margin-bottom: var(--space-sm)
+            height: 2rem
+
+            tr
+                height: 30%
+
 
             *
                 vertical-align: top
@@ -158,7 +163,9 @@ export default {
         .form
             display: grid
             grid-template-columns: 1fr
+            grid-auto-rows: min-content
             grid-gap: var(--space-sm)
+
 
             &>*
                 max-width: 100%
@@ -174,36 +181,36 @@ export default {
             padding: var(--space-md) var(--space-lg)
 
 
-        @include lg
-            display: grid
-            grid-template-columns: 1fr 44vw 44vw 1fr
-            padding-top: var(--space-lg)
+            @include lg
+                display: grid
+                grid-template-columns: 1fr 44vw 44vw 1fr
+                padding-top: var(--space-lg)
 
-            &>*
-                
-                padding: 0 var(--space-md)
-
-            .info
-                padding-left: var(--space-sm)
-                justify-self: end
-                max-width: 600px
-
-
-            .form
-                grid-template-columns: 1fr 1fr
-                padding-right: var(--space-sm)
-                max-width: 600px
-
-
-                .name
-                    grid-column: 1/-1
-
-                .message
-                    grid-column: 1/-1
+                &>*
                     
+                    padding: 0 var(--space-md)
 
-            &::before,
-            &::after
-                content: ''
+                .info
+                    padding-left: var(--space-sm)
+                    justify-self: end
+                    max-width: 600px
+
+
+                .form
+                    grid-template-columns: 1fr 1fr
+                    padding-right: var(--space-sm)
+                    max-width: 600px
+
+
+                    .name
+                        grid-column: 1/-1
+
+                    .message
+                        grid-column: 1/-1
+                        
+
+                &::before,
+                &::after
+                    content: ''
 
 </style>
