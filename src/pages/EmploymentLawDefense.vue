@@ -117,8 +117,10 @@ export default {
         &--youtube
             border: 3px solid var(--color-a)
             color: var(--color-a)
-            height: 100px
-            width: 300px
+            height: 42vw
+            width: 80vw
+            max-height: 315px
+            max-width: 560px
             text-align: center
             margin: 0 var(--space-md) var(--space-md) 
 </style>
