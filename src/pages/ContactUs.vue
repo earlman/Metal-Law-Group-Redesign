@@ -10,7 +10,7 @@
 			</template>
 		</PageTitle>
 		<section class="contact-info">
-			<div>
+			<div class="form--container">
 				<form class="form">
 					<input type="text" aria-placeholder="name" placeholder="Name" class="name" />
 					<input type="tel" aria-placeholder="Phone" placeholder="Phone" class="tel" />
@@ -67,11 +67,6 @@
 						<td>$4</td>
 						<td>Always Available</td>
 					</tr>
-					<thead>
-						<td
-							colspan="3"
-						>After 3 hours, standard office building rates apply: $3 every 10 minutes, $35 maximum</td>
-					</thead>
 					<tr>
 						<td>No Limit</td>
 						<td>$6</td>
@@ -82,6 +77,12 @@
 						<td>--</td>
 						<td>Not Permitted</td>
 						<td>Overnight</td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							Note: After 3 hours, standard office building rates apply
+							<strong>($3 every 10 minutes, $35 maximum)</strong>
+						</td>
 					</tr>
 				</table>
 			</div>
@@ -117,38 +118,91 @@ export default {
         padding: var(--space-md) var(--space-sm) var(--space-lg)
 
 
-    .info
 
-        &--description
-            margin-bottom: var(--space-sm)
 
-    .form
+    .contact-info
         display: grid
-        grid-template-columns: 1fr
-        grid-auto-rows: min-content
-        grid-gap: var(--space-sm)
-        margin-bottom: var(--space-md)
-
-        &>*
-            max-width: 100%
+        grid-template-columns: 1fr 88vw 1fr
+        justify-content: center
+        justify-items: center
 
         @include lg
-            grid-template-columns: 1fr 1fr
-            padding-right: var(--space-sm)
-            max-width: 600px
+            grid-template-columns: 1fr 44vw 44vw 1fr
+            
 
 
-            .name
-                grid-column: 1/-1
 
-            .message
-                grid-column: 1/-1
-                        
+        .form--container
+            grid-column: 2/-2
+            width: 100%
+
+            @include lg
+                grid-column: 2
+
+        .form
+            display: grid
+            grid-template-columns: 1fr
+            grid-auto-rows: min-content
+            grid-gap: var(--space-sm)
+            margin-bottom: var(--space-md)
+
+            &>*
+                max-width: 100%
+
+            @include lg
+                grid-template-columns: 1fr 1fr
+                padding-right: var(--space-sm)
+                max-width: 600px
+
+
+                .name
+                    grid-column: 1/-1
+
+                .message
+                    grid-column: 1/-1
+
+
+        .info
+            grid-column: 3
+
+            @include lg
+                grid-column: 3/4
+
+            &--description
+                margin-bottom: var(--space-sm)
 
 
     .directions
+        display: grid
+        grid-template-columns: 1fr 88vw 1fr
+        justify-content: center
+        justify-items: center
+
+        @include lg
+            grid-template-columns: 1fr 44vw 44vw 1fr
+
+        &--map
+            grid-column: 2/-2
+
+
+            border: 3px solid var(--color-a)
+            color: var(--color-a)
+            height: 42vw
+            width: 100%
+            max-height: 315px
+            max-width: 560px
+            text-align: center
+            margin: 0 auto var(--space-sm)
+
+            @include lg
+                grid-column: 2
+
         &--parking
-            margin-bottom: var(--space-sm)
+            grid-column: 2/-2
+            margin-bottom: var(--space-md)
+
+            h5
+                display: inline-block
             
             td
                 @include text(sm)
@@ -161,14 +215,20 @@ export default {
                 font-weight: 600
                 padding: var(--space-xs) 0
 
-        &--map
-            border: 3px solid var(--color-a)
-            color: var(--color-a)
-            height: 42vw
+            @include lg
+                grid-column: 2
+
+        &--instructions
+            grid-column: 2/-2
             width: 100%
-            max-height: 315px
-            max-width: 560px
-            text-align: center
-            margin-bottom: var(--space-sm)
+
+            @include lg
+                grid-column: 3
+                grid-row: 1/3
+                padding: 0 var(--space-md)
+                margin-top: -10px
+
+
+
             
 </style>
