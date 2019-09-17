@@ -170,11 +170,6 @@ export default {
             &>*
                 max-width: 100%
 
-            ::placeholder
-                color: var(--color-t-h-alt)
-
-            textarea
-                height: 30vh
 
 
         @include md
