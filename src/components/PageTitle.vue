@@ -48,6 +48,8 @@ export default {};
         &--detail
             max-width: 75ch
 
+            @include md 
+                width: 60vw
             
     
 </style>
