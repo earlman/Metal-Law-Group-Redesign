@@ -10,16 +10,12 @@
 			</template>
 		</PageTitle>
 		<section class="contact-info">
-			<div class="contact-form">
-				<form action>
-					Name
-					<input type="text" />
-					Phone
-					<input type="tel" name id />
-					Email
-					<input type="email" name id />
-					Message
-					<textarea></textarea>
+			<div>
+				<form class="form">
+					<input type="text" aria-placeholder="name" placeholder="Name" class="name" />
+					<input type="tel" aria-placeholder="Phone" placeholder="Phone" class="tel" />
+					<input type="email" aria-placeholder="Email" placeholder="Email" class="email" />
+					<textarea type="Message" aria-placeholder="Message" placeholder="Message" class="message"></textarea>
 				</form>
 			</div>
 			<div class="info">
@@ -41,6 +37,7 @@
 				</div>
 			</div>
 		</section>
+		<SectionTitle>Directions</SectionTitle>
 		<section class="directions">
 			<div class="directions--map">
 				<a href="googlemaps">
@@ -70,11 +67,13 @@
 						<td>$4</td>
 						<td>Always Available</td>
 					</tr>
+					<thead>
+						<td
+							colspan="3"
+						>After 3 hours, standard office building rates apply: $3 every 10 minutes, $35 maximum</td>
+					</thead>
 					<tr>
-						<td>After 3 hours, standard office building rates apply ($3 every 10 minutes; $35 maximum)</td>
-					</tr>
-					<tr>
-						<td>&#8734; (No Limit)</td>
+						<td>No Limit</td>
 						<td>$6</td>
 						<td>Saturday, Sunday, & after 4pm on Weekdays</td>
 					</tr>
@@ -114,4 +113,62 @@ export default {
 
 <style lang="sass" scoped>
 
+    section
+        padding: var(--space-md) var(--space-sm) var(--space-lg)
+
+
+    .info
+
+        &--description
+            margin-bottom: var(--space-sm)
+
+    .form
+        display: grid
+        grid-template-columns: 1fr
+        grid-auto-rows: min-content
+        grid-gap: var(--space-sm)
+        margin-bottom: var(--space-md)
+
+        &>*
+            max-width: 100%
+
+        @include lg
+            grid-template-columns: 1fr 1fr
+            padding-right: var(--space-sm)
+            max-width: 600px
+
+
+            .name
+                grid-column: 1/-1
+
+            .message
+                grid-column: 1/-1
+                        
+
+
+    .directions
+        &--parking
+            margin-bottom: var(--space-sm)
+            
+            td
+                @include text(sm)
+                padding-right: var(--space-xs)
+                vertical-align: top
+                border-top: 1px solid var(--color-a)
+                // border-bottom: 1px solid var(--color-a)
+
+            thead td
+                font-weight: 600
+                padding: var(--space-xs) 0
+
+        &--map
+            border: 3px solid var(--color-a)
+            color: var(--color-a)
+            height: 42vw
+            width: 100%
+            max-height: 315px
+            max-width: 560px
+            text-align: center
+            margin-bottom: var(--space-sm)
+            
 </style>
