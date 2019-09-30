@@ -8,15 +8,23 @@
 				<div class="footer--submenu">
 					<h5>Our Services</h5>
 					<ul>
-						<li>Business Litigation</li>
-						<li>Employment Law Defense</li>
+						<li>
+							<g-link to="/business-litigation">Business Litigation</g-link>
+						</li>
+						<li>
+							<g-link to="/employment-law-defense">Employment Law Defense</g-link>
+						</li>
 					</ul>
 				</div>
 				<div class="footer--submenu">
 					<h5>Quick Links</h5>
 					<ul>
-						<li>Disclaimer</li>
-						<li>Privacy Policy</li>
+						<li>
+							<g-link to="/disclaimer">Disclaimer</g-link>
+						</li>
+						<li>
+							<g-link to="/">Privacy Policy</g-link>
+						</li>
 					</ul>
 				</div>
 				<div class="footer--submenu">
@@ -33,13 +41,19 @@
 				<div class="footer--social">
 					<ul>
 						<li>
-							<Icon :name="icons.twitter" size="16pt" color="white" />
+							<a href="https://twitter.com/metallawgroup">
+								<Icon :name="icons.twitter" size="16pt" color="white" />
+							</a>
 						</li>
 						<li>
-							<Icon :name="icons.linkedin" size="16pt" color="white" />
+							<a href="https://www.linkedin.com/company/m.e.t.a.l.-law-group-llp">
+								<Icon :name="icons.linkedin" size="16pt" color="white" />
+							</a>
 						</li>
 						<li>
-							<Icon :name="icons.facebook" size="16pt" color="white" />
+							<a href="https://www.facebook.com/metallawgroup/">
+								<Icon :name="icons.facebook" size="16pt" color="white" />
+							</a>
 						</li>
 					</ul>
 				</div>
