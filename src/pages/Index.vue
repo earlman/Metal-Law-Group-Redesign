@@ -14,13 +14,13 @@
 			<SectionTitle>Our Services</SectionTitle>
 			<section>
 				<CardGrid>
-					<Card :iconname="icons.policies4">
+					<Card :iconname="icons.policies4" linkto="/business-litigation">
 						Business & Commercial Litigation
 						<template
 							v-slot:detail
 						>We can help you in breach of contract cases, joint partnership ventures gone bad, LLC lawsuits, and other business disputes.</template>
 					</Card>
-					<Card :iconname="icons.defense">
+					<Card :iconname="icons.defense" linkto="/employment-law-defense">
 						Employment Defense
 						<template
 							v-slot:detail

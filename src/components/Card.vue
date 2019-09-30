@@ -14,7 +14,9 @@
 				</p>
 			</div>
 			<div class="card--arrow">
-				<Icon :name="icons.continue" size="20pt" />
+				<g-link :to="linkto">
+					<Icon :name="icons.continue" size="20pt" />
+				</g-link>
 			</div>
 		</div>
 	</div>
@@ -32,6 +34,10 @@ export default {
 		iconname: {
 			type: Object,
 			default: icons.search
+		},
+		linkto: {
+			type: String,
+			default: "/contact-us"
 		}
 	},
 	data: () => ({
