@@ -71,7 +71,7 @@ hr
     border: none
     max-width: 90vw
 
-button
+button, input[type="submit"]
     background-color: var(--color-b)
     border: 2px solid var(--color-p)
     border-radius: 3px
@@ -80,17 +80,9 @@ button
     cursor: pointer
 
 
-form
-    input, textarea
-        transition: color,opacity, border .4s,.4s ease
-        border: 2px solid var(--color-a)
-        border-radius: 3px
-        line-height: 3
-        padding: 0 1rem
-        color: var(--color-t-b)
 
-        &:focus
-            border: 2px solid var(--color-p)
+
+form
 
     ::placeholder
         color: var(--color-t-h-alt)
@@ -98,6 +90,16 @@ form
     textarea
         height: 30vh
 
+input, textarea
+    transition: color,opacity, border .4s,.4s ease
+    border: 2px solid var(--color-a)
+    border-radius: 3px
+    line-height: 3
+    padding: 0 1rem
+    color: var(--color-t-b)
+
+    &:focus
+        border: 2px solid var(--color-p)
 
 @mixin transition
     transition: color,opacity, border .4s,.4s ease

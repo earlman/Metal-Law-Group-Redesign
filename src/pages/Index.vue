@@ -65,6 +65,7 @@
 					<input type="tel" aria-placeholder="Phone" placeholder="Phone" class="tel" />
 					<input type="email" aria-placeholder="Email" placeholder="Email" class="email" />
 					<textarea type="Message" aria-placeholder="Message" placeholder="Message" class="message"></textarea>
+					<input type="submit" value="Submit" />
 				</form>
 			</section>
 			<SectionTitle>
