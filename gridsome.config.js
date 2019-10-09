@@ -26,6 +26,7 @@ module.exports = {
             options: {
                 baseUrl: 'https://www.metallawgroup.com', // required
                 typeName: 'WordPress', // GraphQL schema name (Optional)
+                apiBase: 'wp-json',
                 perPage: 100, // How many posts to load from server per request (Optional)
                 concurrent: 10, // How many requests to run simultaneously (Optional)
                 routes: {
