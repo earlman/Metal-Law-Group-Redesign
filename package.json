@@ -9,8 +9,8 @@
         "styles": "parcel src/styles/index.html"
     },
     "dependencies": {
-        "@gridsome/source-wordpress": "^0.3.0",
-        "gridsome": "^0.6.0"
+        "@gridsome/source-wordpress": "^0.4.2",
+        "gridsome": "^0.7.7"
     },
     "devDependencies": {
         "node-sass": "^4.12.0",
