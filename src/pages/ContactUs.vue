@@ -88,13 +88,11 @@
 			</div>
 			<div class="directions--instructions">
 				<h2>Parking Instructions</h2>
-				<p>
-					Our office is adjacent to the DTLA Shopping Center FIGat7th. The easiest option is to park there and then come to the front desk of the Ernest & Young Plaza Building.
-					We do not offer validation but you can grab a coffee from Starbucks on the ground floor to get validated rates.
-					There are 500 shopping and dining parking spaces conveniently located at the 945 W. 8th Street parking structure adjacent to the FIGat7th retail center. Entrances to the parking structure are located on both 7th and 8th Streets.
-					The parking structure is open 24 hours a day / 7 days a week. Parking structure managed by ABM Parking. Call (213) 955-7945 for more information.
-					PLEASE NOTE: For discounted parking rates, you MUST have parking tickets validated in a store or restaurant and ONLY park on garage levels L1, L2, or L3. To avoid being charged a higher rate, DO NOT PARK on level L4 or higher.
-				</p>
+				<p>Our office is adjacent to the DTLA Shopping Center FIGat7th. The easiest option is to park there and then come to the front desk of the Ernest & Young Plaza Building.</p>
+				<p>We do not offer validation but you can grab a coffee from Starbucks on the ground floor to get validated rates.</p>
+				<p>There are 500 shopping and dining parking spaces conveniently located at the 945 W. 8th Street parking structure adjacent to the FIGat7th retail center. Entrances to the parking structure are located on both 7th and 8th Streets.</p>
+				<p>The parking structure is open 24 hours a day / 7 days a week. Parking structure managed by ABM Parking. Call (213) 955-7945 for more information.</p>
+				<p>PLEASE NOTE: For discounted parking rates, you MUST have parking tickets validated in a store or restaurant and ONLY park on garage levels L1, L2, or L3. To avoid being charged a higher rate, DO NOT PARK on level L4 or higher.</p>
 			</div>
 		</section>
 	</Layout>
