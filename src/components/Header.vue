@@ -15,7 +15,15 @@
 					<g-link to="/">Home</g-link>
 				</li>
 				<li>
-					<g-link to>What We Do</g-link>
+					<a href="#" class="empty">What We Do</a>
+					<ul>
+						<li>
+							<g-link to="/business-litigation">Business Litigation</g-link>
+						</li>
+						<li>
+							<g-link to="/employment-law-defense">Employment Law Defense</g-link>
+						</li>
+					</ul>
 				</li>
 				<li>
 					<g-link to="/who-we-are">Who We Are</g-link>
@@ -83,11 +91,49 @@ export default {};
                 flex-wrap: wrap
                 justify-content: center
                 padding: 0
-                margin-bottom: var(--space-sm)
-                
+                margin-bottom: 0
 
-            li
-                @include space-inline(var(--space-sm))
+                li:hover > ul,
+                li:focus-within > ul,
+                li ul:hover
+                    visibility: visible
+                    opacity: 1    
+                    display: block                
+
+                li
+                    display: block
+                    padding: var(--space-xs)
+                    transition-duration: .5s
+                    background: var(--color-b)
+                    position: relative
+                    float: left
+
+                    &:hover,
+                    &:focus-within
+                        // cursor: pointer
+                        background: var(--color-a)
+
+                    &:focus-within a
+                        outline: none
+
+                    .empty 
+                        cursor: default
+
+                    ul
+                        position: absolute
+                        z-index: 10
+                        transition: all 0.5s ease
+                        visibility: hidden
+                        opacity: 0
+                        min-width: 25ch
+                        padding-top: var(--space-xs)
+                        display: none
+                        left: 0
+
+                        li
+                            clear: both;
+                            width: 100%;
+             
 
 
         &--hero
