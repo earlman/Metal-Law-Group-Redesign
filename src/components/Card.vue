@@ -77,7 +77,8 @@ export default {
         margin-bottom: var(--space-sm)
 
     &--arrow
-        align-self: end
+        align-self: flex-end
+        margin-left: var(--space-sm)
         // position: relative
         // bottom: -2rem
         // padding: var(--space-xs)        
