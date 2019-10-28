@@ -40,9 +40,7 @@
 		<SectionTitle>Directions</SectionTitle>
 		<section class="directions">
 			<div class="directions--map">
-				<a href="googlemaps">
-					<img src alt="Map of location linked to google" />
-				</a>
+				<GoogleMap />
 			</div>
 			<div class="directions--parking">
 				<h5>PARKING RATES (with validation):</h5>
@@ -99,13 +97,15 @@
 </template>
 
 <script>
-import SectionTitle from "~/components/SectionTitle.vue";
-import PageTitle from "~/components/PageTitle.vue";
+import SectionTitle from "~/components/SectionTitle";
+import PageTitle from "~/components/PageTitle";
+import GoogleMap from "~/components/GoogleMap";
 
 export default {
 	components: {
 		SectionTitle,
-		PageTitle
+		PageTitle,
+		GoogleMap
 	}
 };
 </script>
@@ -191,6 +191,12 @@ export default {
             max-width: 560px
             text-align: center
             margin: 0 auto var(--space-sm)
+            display: flex
+            align-content: stretch
+            justify-content: stretch        
+
+            *
+                flex-grow: 1
 
             @include lg
                 grid-column: 2
