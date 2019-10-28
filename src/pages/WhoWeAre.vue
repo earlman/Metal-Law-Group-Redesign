@@ -3,12 +3,10 @@
 		<PageTitle>
 			Who We Are
 			<template v-slot:detail>
-				Metal Law Group exists to advise, defend and protect business owners, entrepreneurs and employers.
-				<input
-					type="search"
-					name
-					id
-				/>
+				<p class="search-text">Search for an employee below</p>
+				<div>
+					<input type="search" name id />
+				</div>
 			</template>
 		</PageTitle>
 	</Layout>
@@ -31,6 +29,10 @@ export default {
 </script>
 
 <style lang="sass" scoped>
+.search-text
+    margin: 0 auto var(--space-sm)
+    text-align: center    
     
+
 
 </style>
