@@ -9,8 +9,11 @@
         "styles": "parcel src/styles/index.html"
     },
     "dependencies": {
+        "@gridsome/cli": "^0.3.1",
         "@gridsome/source-wordpress": "^0.4.2",
-        "gridsome": "^0.7.7"
+        "global": "^4.4.0",
+        "gridsome": "^0.7.7",
+        "vue2-google-maps": "^0.10.7"
     },
     "devDependencies": {
         "node-sass": "^4.12.0",
