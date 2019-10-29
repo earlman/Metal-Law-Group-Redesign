@@ -48,5 +48,8 @@ module.exports = {
         // types.forEach(type => {
         //     addStyleResource(config.module.rule('scss').oneOf(type))
         // })
+    },
+    templates: {
+        WordPressPage: '/employee/:slug'
     }
 }
