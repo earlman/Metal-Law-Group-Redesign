@@ -44,11 +44,11 @@ query Post ($path: String!) {
       title
       
     }
-    tags {
-      id
-      title
-      path
-    }
+    # tags {
+    #  id
+    #  title
+    #  path
+    # }
   }
 }
 </page-query>
