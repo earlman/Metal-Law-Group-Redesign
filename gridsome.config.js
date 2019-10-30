@@ -24,7 +24,13 @@ module.exports = {
                 apiBase: 'wp-json',
                 perPage: 100, // How many posts to load from server per request (Optional)
                 concurrent: 10, // How many requests to run simultaneously (Optional)
-
+                customEndpoints: [
+                    {
+                        name: "Employees",
+                        typeName: "Employee",
+                        route: "/wp/v2/posts?categories=251"
+                    }
+                ]
             }
         }
     ],
@@ -42,17 +48,17 @@ module.exports = {
         // })
     },
     templates: {
-        // WordPressPage: '/employee/:slug',
+        Employee: '/employee/:acf__name',
 
-        WordPressPage: [
-            {
-                path: '/employee/:slug',
-                component: './src/templates/Employee.vue',
-            }
-        ],
-        WordPressCategory: '/category/:slug', // adds route for "category" post type (Optional)
-        WordPressPost: '/:year/:month/:day/:slug', //adds route for "post" post type (Optional)
-        WordPressPostTag: '/tag/:slug' // adds route for "post_tag" post type (Optional)
+        // WordPressPage: [
+        //     {
+        //         path: '/employee/:slug',
+        //         component: './src/templates/Employee.vue',
+        //     }
+        // ],
+        // WordPressCategory: '/category/:slug', // adds route for "category" post type (Optional)
+        // WordPressPost: '/:year/:month/:day/:slug', //adds route for "post" post type (Optional)
+        // WordPressPostTag: '/tag/:slug' // adds route for "post_tag" post type (Optional)
 
     }
 }

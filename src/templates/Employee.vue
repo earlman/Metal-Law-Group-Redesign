@@ -1,6 +1,6 @@
 <template>
 	<Layout>
-		<h1>{{$page.wordPressPage.title}}</h1>
+		<h1>Does it work????? {{$page.employee.title}}</h1>
 		<section class="general-info">
 			<h1>Rosie Palmer</h1>
 			<h2>Managing Partner</h2>
@@ -50,7 +50,7 @@
 <page-query>
 
 query Post ($path: String!) {
-    wordPressPage (path: $path) {
+    employee (path: $path) {
         title
       	acf {
           name
