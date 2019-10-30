@@ -713,10 +713,9 @@
     sort-package-json "^1.15.0"
     update-notifier "^3.0.1"
 
-"@gridsome/source-wordpress@^0.4.2":
-  version "0.4.2"
-  resolved "https://registry.yarnpkg.com/@gridsome/source-wordpress/-/source-wordpress-0.4.2.tgz#8dc769880f3c7eb04e52ebb2d0d57d50fdfe4921"
-  integrity sha512-l7iUrdMKf2Jg5erOPK1XIBRGw1uCg484B9MgtVh17wLzGxhQYiQe4y91EEHSjGzH0lpa3k2/PimiP40FP8qo7w==
+"@gridsome/source-wordpress@https://github.com/earlman/gridsome-source-wordpress-earlman":
+  version "0.5.0"
+  resolved "https://github.com/earlman/gridsome-source-wordpress-earlman#f085e19899599a2209f6f7ed052216f6aca3ab63"
   dependencies:
     axios "^0.19.0"
     camelcase "^5.0.0"

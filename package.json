@@ -10,7 +10,7 @@
     },
     "dependencies": {
         "@gridsome/cli": "^0.3.1",
-        "@gridsome/source-wordpress": "^0.4.2",
+        "@gridsome/source-wordpress": "https://github.com/earlman/gridsome-source-wordpress-earlman",
         "global": "^4.4.0",
         "gridsome": "^0.7.7",
         "vue2-google-maps": "^0.10.7"
