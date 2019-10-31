@@ -33,13 +33,15 @@ export default {};
             grid-template-columns:  700px 700px 
 
     & > *
+        border-bottom: 1px solid var(--color-a)
+
         &:nth-child(odd) 
-            border-left: none
+            border-left: 1px solid var(--color-a)
             border-right: 1px solid var(--color-a)
 
         &:nth-child(even)
             border-left: 1px solid var(--color-a)
-            border-right: none
+            border-right: 1px solid var(--color-a)
 
     // &::before,
     // &::after
