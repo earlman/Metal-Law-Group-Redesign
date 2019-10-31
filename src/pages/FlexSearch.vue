@@ -12,7 +12,15 @@
 		<SectionTitle v-if="searchResults">Results</SectionTitle>
 		<div class="results">
 			<EmployeeCardGrid>
-				<EmployeeCard v-for="result in searchResults" :key="result.id">{{result}}</EmployeeCard>
+				<EmployeeCard
+					v-for="result in searchResults"
+					:key="result.id"
+					:linkto="result.path"
+					:photo="result.acf.photo"
+				>
+					{{result.acf.name}}
+					<template v-slot:detail>{{result.acf.title}}</template>
+				</EmployeeCard>
 			</EmployeeCardGrid>
 		</div>
 	</Layout>
@@ -20,17 +28,27 @@
 
 <static-query>
 query Posts {
-  posts: allEmployee {
-    edges {
-      node {
-        id
-        title
-        date
-        path
-        excerpt
-      }
+    posts: allEmployee {
+        edges {
+            node {
+                id
+                title
+                date
+                path
+                acf {
+                    name
+                    email
+                    photo
+                    phoneNumber
+                    title
+                    experience
+                    barAdmissions
+                    practiceAreas
+                    education    
+                }   
+            }
+        }
     }
-  }
 }
 </static-query>
 
@@ -79,6 +97,8 @@ export default {
 </script>
 
 <style lang="sass" scoped>
+
+
 .search-text
     margin: 0 auto var(--space-sm)
     text-align: center    
