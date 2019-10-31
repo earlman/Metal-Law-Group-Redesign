@@ -9,9 +9,9 @@
 				</div>
 			</template>
 		</PageTitle>
-		<div>
-			<h3>Results</h3>
-			<EmployeeCardGrid v-if="searchResults">
+		<SectionTitle v-if="searchResults">Results</SectionTitle>
+		<div class="results">
+			<EmployeeCardGrid>
 				<EmployeeCard v-for="result in searchResults" :key="result.id">{{result}}</EmployeeCard>
 			</EmployeeCardGrid>
 		</div>
