@@ -1,17 +1,17 @@
 <template>
 	<div class="card-wrapper">
 		<div class="card">
-			<Icon :name="iconname" size="32pt" class="card--icon" color="var(--color-p)" />
+			<img class="card--photo" :src="photo" />
 
 			<div class="card--info">
 				<h3 class="card--title">
 					<slot>Business Litigation Card</slot>
 				</h3>
-				<p class="card--detail">
+				<h5 class="card--detail">
 					<slot
 						name="detail"
 					>We can help you in breach of contract cases, joint partnership ventures gone bad, LLC lawsuits, and other business disputes.</slot>
-				</p>
+				</h5>
 			</div>
 			<div class="card--arrow">
 				<g-link :to="linkto">
@@ -31,9 +31,9 @@ export default {
 		Icon
 	},
 	props: {
-		iconname: {
-			type: Object,
-			default: icons.search
+		photo: {
+			type: String,
+			default: ""
 		},
 		linkto: {
 			type: String,
@@ -67,14 +67,16 @@ export default {
     height: 100%
     justify-content: center
 
+    &--photo
+        max-width: 200px
+
     &--title
-        margin-bottom: var(--space-sm)
 
     &--detail
         max-width: 400px
 
     &--info
-        margin-bottom: var(--space-sm)
+        margin-bottom: var(--space-md)
 
     &--arrow
         align-self: flex-end
@@ -83,9 +85,8 @@ export default {
         // bottom: -2rem
         // padding: var(--space-xs)        
 
-    &--icon
+    &--photo
         margin-bottom: var(--space-xs)
-        width: 40px
 
 
     // when there's 2 columns, change the layout. See CardGrid.vue
@@ -93,7 +94,7 @@ export default {
         flex-direction: row
         margin: 0 var(--space-md)
 
-        &--icon
+        &--photo
             margin-right: var(--space-md)    
 
 
