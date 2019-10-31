@@ -15,12 +15,13 @@ export default {};
     grid-template-columns: 1fr
     grid-template-rows: auto
     justify-items: stretch
+    justify-content: center
 
     border: 1px solid var(--color-a)
 
     
     @include md
-        grid-template-columns: 1fr 44vw 44vw 1fr
+        grid-template-columns:  44vw 44vw 
         &>*
             &:nth-child(odd) 
                 padding-left: 0
@@ -29,7 +30,7 @@ export default {};
         
 
         @include xl
-            grid-template-columns: 1fr 700px 700px 1fr
+            grid-template-columns:  700px 700px 
 
     & > *
         &:nth-child(odd) 
@@ -40,9 +41,9 @@ export default {};
             border-left: 1px solid var(--color-a)
             border-right: none
 
-    &::before,
-    &::after
-        content: ''
+    // &::before,
+    // &::after
+    //     content: ''
 
 
 </style>
