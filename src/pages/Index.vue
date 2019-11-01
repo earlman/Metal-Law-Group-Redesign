@@ -60,13 +60,13 @@
 						</td>
 					</tr>
 				</table>
-				<form class="form">
+				<!-- <form class="form">
 					<input type="text" aria-placeholder="name" placeholder="Name" class="name" />
 					<input type="tel" aria-placeholder="Phone" placeholder="Phone" class="tel" />
 					<input type="email" aria-placeholder="Email" placeholder="Email" class="email" />
 					<textarea type="Message" aria-placeholder="Message" placeholder="Message" class="message"></textarea>
 					<input type="submit" value="Submit" />
-				</form>
+				</form>-->
 			</section>
 			<SectionTitle>
 				Find a Professional
