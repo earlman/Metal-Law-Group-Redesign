@@ -44,7 +44,7 @@
 			</div>
 			<div class="directions--parking">
 				<h5>PARKING RATES (with validation):</h5>
-				<table>
+				<!-- <table>
 					<thead>
 						<td>Length of Stay</td>
 						<td>Price</td>
@@ -82,7 +82,7 @@
 							<strong>($3 every 10 minutes, $35 maximum)</strong>
 						</td>
 					</tr>
-				</table>
+				</table>-->
 			</div>
 			<div class="directions--instructions">
 				<h2>Parking Instructions</h2>

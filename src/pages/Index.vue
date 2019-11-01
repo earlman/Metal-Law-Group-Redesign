@@ -30,7 +30,7 @@
 			</section>
 			<SectionTitle>Get in Touch</SectionTitle>
 			<section class="get-in-touch">
-				<table class="info">
+				<!-- <table class="info">
 					<tr>
 						<td>
 							<h5>Phone:</h5>
@@ -59,14 +59,14 @@
 							</h5>
 						</td>
 					</tr>
-				</table>
-				<!-- <form class="form">
+				</table>-->
+				<form class="form">
 					<input type="text" aria-placeholder="name" placeholder="Name" class="name" />
 					<input type="tel" aria-placeholder="Phone" placeholder="Phone" class="tel" />
 					<input type="email" aria-placeholder="Email" placeholder="Email" class="email" />
 					<textarea type="Message" aria-placeholder="Message" placeholder="Message" class="message"></textarea>
 					<input type="submit" value="Submit" />
-				</form>-->
+				</form>
 			</section>
 			<SectionTitle>
 				Find a Professional
