@@ -46,6 +46,8 @@ module.exports = {
         // types.forEach(type => {
         //     addStyleResource(config.module.rule('scss').oneOf(type))
         // })
+
+        config.mode('development')
     },
     templates: {
         Employee: '/employee/:acf__name',
