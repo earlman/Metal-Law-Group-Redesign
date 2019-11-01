@@ -44,45 +44,47 @@
 			</div>
 			<div class="directions--parking">
 				<h5>PARKING RATES (with validation):</h5>
-				<!-- <table>
+				<table>
 					<thead>
 						<td>Length of Stay</td>
 						<td>Price</td>
 						<td>Availability</td>
 					</thead>
-					<tr>
-						<td>1 hour</td>
-						<td>$1</td>
-						<td>Always Available</td>
-					</tr>
-					<tr>
-						<td>2 hours</td>
-						<td>$2.50</td>
-						<td>Always Available</td>
-					</tr>
-					<tr>
-						<td>4 hours</td>
-						<td>$4</td>
-						<td>Always Available</td>
-					</tr>
-					<tr>
-						<td>No Limit</td>
-						<td>$6</td>
-						<td>Saturday, Sunday, & after 4pm on Weekdays</td>
-					</tr>
+					<tbody>
+						<tr>
+							<td>1 hour</td>
+							<td>$1</td>
+							<td>Always Available</td>
+						</tr>
+						<tr>
+							<td>2 hours</td>
+							<td>$2.50</td>
+							<td>Always Available</td>
+						</tr>
+						<tr>
+							<td>4 hours</td>
+							<td>$4</td>
+							<td>Always Available</td>
+						</tr>
+						<tr>
+							<td>No Limit</td>
+							<td>$6</td>
+							<td>Saturday, Sunday, & after 4pm on Weekdays</td>
+						</tr>
 
-					<tr>
-						<td>--</td>
-						<td>Not Permitted</td>
-						<td>Overnight</td>
-					</tr>
-					<tr>
-						<td colspan="3">
-							Note: After 3 hours, standard office building rates apply
-							<strong>($3 every 10 minutes, $35 maximum)</strong>
-						</td>
-					</tr>
-				</table>-->
+						<tr>
+							<td>--</td>
+							<td>Not Permitted</td>
+							<td>Overnight</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								Note: After 3 hours, standard office building rates apply
+								<strong>($3 every 10 minutes, $35 maximum)</strong>
+							</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
 			<div class="directions--instructions">
 				<h2>Parking Instructions</h2>

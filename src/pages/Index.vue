@@ -30,36 +30,38 @@
 			</section>
 			<SectionTitle>Get in Touch</SectionTitle>
 			<section class="get-in-touch">
-				<!-- <table class="info">
-					<tr>
-						<td>
-							<h5>Phone:</h5>
-						</td>
-						<td class="info--detail">
-							<h5>323-289-2260</h5>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<h5>Fax:</h5>
-						</td>
-						<td class="info--detail">
-							<h5>323-289-2261</h5>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<h5>Address:</h5>
-						</td>
-						<td class="info--detail">
-							<h5>
-								725 S Figueroa Street
-								<br />#3065
-								<br />Los Angeles, CA 90017
-							</h5>
-						</td>
-					</tr>
-				</table>-->
+				<table class="info">
+					<tbody>
+						<tr>
+							<td>
+								<h5>Phone:</h5>
+							</td>
+							<td class="info--detail">
+								<h5>323-289-2260</h5>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h5>Fax:</h5>
+							</td>
+							<td class="info--detail">
+								<h5>323-289-2261</h5>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h5>Address:</h5>
+							</td>
+							<td class="info--detail">
+								<h5>
+									725 S Figueroa Street
+									<br />#3065
+									<br />Los Angeles, CA 90017
+								</h5>
+							</td>
+						</tr>
+					</tbody>
+				</table>
 				<form class="form">
 					<input type="text" aria-placeholder="name" placeholder="Name" class="name" />
 					<input type="tel" aria-placeholder="Phone" placeholder="Phone" class="tel" />
