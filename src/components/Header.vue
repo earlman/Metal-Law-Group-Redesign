@@ -15,7 +15,7 @@
 					<g-link to="/">Home</g-link>
 				</li>
 				<li>
-					<a href="#" class="empty">What We Do</a>
+					<p class="empty">What We Do</p>
 					<ul>
 						<li>
 							<g-link to="/business-litigation">Business Litigation</g-link>
