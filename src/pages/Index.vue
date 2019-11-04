@@ -7,7 +7,9 @@
 					<template
 						v-slot:detail
 					>
-						<button>Contact us for a free consultation&nbsp;&nbsp;&#8594;</button>
+						<g-link to="/contact-us">
+							<button>Contact us for a free consultation&nbsp;&nbsp;&#8594;</button>
+						</g-link>
 					</template>
 				</PageTitle>
 			</section>
