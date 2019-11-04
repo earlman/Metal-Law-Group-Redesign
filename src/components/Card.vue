@@ -2,7 +2,6 @@
 	<div class="card-wrapper">
 		<div class="card">
 			<Icon :name="iconname" size="32pt" class="card--icon" color="var(--color-p)" />
-
 			<div class="card--info">
 				<h3 class="card--title">
 					<slot>Business Litigation Card</slot>
@@ -13,7 +12,7 @@
 					>We can help you in breach of contract cases, joint partnership ventures gone bad, LLC lawsuits, and other business disputes.</slot>
 				</p>
 			</div>
-			<div class="card--arrow">
+			<div v-if="linkto" class="card--arrow">
 				<g-link :to="linkto">
 					<Icon :name="icons.continue" size="20pt" />
 				</g-link>
@@ -37,7 +36,7 @@ export default {
 		},
 		linkto: {
 			type: String,
-			default: "/contact-us"
+			default: null
 		}
 	},
 	data: () => ({
