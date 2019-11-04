@@ -48,6 +48,9 @@ export default {};
         &--detail
             max-width: 75ch
 
+            *
+                margin: auto
+
             @include md 
                 width: 60vw
             
