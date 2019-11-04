@@ -1,9 +1,8 @@
 <template>
 	<header class="header">
-		<div class="header--additional">
+		<!-- <div class="header--additional">
 			<img src alt class="header--searchicon" />
-			<!-- (under construction) -->
-		</div>
+		</div>-->
 		<nav class="p-nav header--menu">
 			<div class="header--menu--logo">
 				<g-link to="/">
@@ -74,6 +73,7 @@ export default {};
             flex-wrap: wrap
             width: 88vw
             max-width: 1400px
+            margin-top: 20px
 
             @include landscape
                 justify-content: space-between
