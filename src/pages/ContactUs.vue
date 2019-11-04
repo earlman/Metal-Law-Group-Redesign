@@ -127,7 +127,7 @@ export default {
         justify-items: center
 
         @include lg
-            grid-template-columns: 1fr 44vw 44vw 1fr
+            grid-template-columns: 1fr minmax(min-content,44vw) 44vw 1fr
             
 
 
@@ -144,6 +144,8 @@ export default {
             grid-template-columns: 1fr
             grid-auto-rows: min-content
             grid-gap: var(--space-sm)
+            margin-left: auto
+            margin-right: auto
             margin-bottom: var(--space-md)
 
             &>*
@@ -163,10 +165,10 @@ export default {
 
 
         .info
-            grid-column: 3
+            grid-column: 2/-2
 
             @include lg
-                grid-column: 3/4
+                grid-column: 3
 
             &--description
                 margin-bottom: var(--space-sm)
