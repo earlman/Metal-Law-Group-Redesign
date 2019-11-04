@@ -14,8 +14,8 @@
 					<g-link to="/">Home</g-link>
 				</li>
 				<li>
-					<p class="empty">What We Do</p>
-					<ul>
+					<a class="empty">What We Do</a>
+					<ul aria-label="submenu">
 						<li>
 							<g-link to="/business-litigation">Business Litigation</g-link>
 						</li>
@@ -92,6 +92,7 @@ export default {};
                 justify-content: center
                 padding: 0
                 margin-bottom: 0
+                line-height: 1
 
                 li:hover > ul,
                 li:focus-within > ul,
@@ -102,11 +103,14 @@ export default {};
 
                 li
                     display: block
-                    padding: var(--space-xs)
                     transition-duration: .5s
                     background: var(--color-b)
                     position: relative
                     float: left
+
+                    a
+                        padding: var(--space-xs)
+                        display: block
 
                     &:hover,
                     &:focus-within
@@ -125,14 +129,13 @@ export default {};
                         transition: all 0.5s ease
                         visibility: hidden
                         opacity: 0
-                        min-width: 25ch
-                        padding-top: var(--space-xs)
                         display: none
                         left: 0
 
-                        li
-                            clear: both;
-                            width: 100%;
+                        li //submenu
+                            min-width: 25ch
+
+                                
              
 
 
