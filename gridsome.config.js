@@ -14,6 +14,7 @@ function addStyleResource(rule) {
 
 module.exports = {
     siteName: 'Metal Law Group',
+    icon: './src/images/favicon.png',
     siteDescription: '',
     plugins: [
         {
