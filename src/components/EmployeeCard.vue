@@ -48,18 +48,9 @@ export default {
 
 <style lang="sass" scoped>
 
-
 .card-wrapper
-
     width: 100%
     padding: var(--space-lg) var(--space-sm) var(--space-md)
-
-    // &:nth-child(odd) .card
-    //     justify-content: flex-end
-    // &:nth-child(even) .card
-    //     justify-content: flex-start
-
-
 
 .card
     display: flex
@@ -77,13 +68,12 @@ export default {
 
     &--info
         margin-bottom: var(--space-md)
+        width: 30ch // keeps card size consistent
 
     &--arrow
         align-self: flex-end
         margin-left: var(--space-sm)
-        // position: relative
-        // bottom: -2rem
-        // padding: var(--space-xs)        
+     
 
     &--photo
         margin-bottom: var(--space-xs)
@@ -96,10 +86,5 @@ export default {
 
         &--photo
             margin-right: var(--space-md)    
-
-
-
-
-
 
 </style>
