@@ -106,6 +106,9 @@ export default {
 input[type="search"]
     width: 350px
     
+.results
+    border-top: 1px solid var(--color-a)
+    padding-bottom: var(--space-lg)
 
 
 </style>
