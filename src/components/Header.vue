@@ -1,42 +1,44 @@
 <template>
-	<header class="header">
-		<!-- <div class="header--additional">
+	<div class="header--container">
+		<header class="header">
+			<!-- <div class="header--additional">
 			<img src alt class="header--searchicon" />
-		</div>-->
-		<nav class="p-nav header--menu">
-			<div class="header--menu--logo">
-				<g-link to="/">
-					<img src="../images/logo.svg" alt="Metal Law Group Logo" class="logo" />
-				</g-link>
+			</div>-->
+			<nav class="p-nav header--menu">
+				<div class="header--menu--logo">
+					<g-link to="/">
+						<img src="../images/logo.svg" alt="Metal Law Group Logo" class="logo" />
+					</g-link>
+				</div>
+				<ul>
+					<li>
+						<g-link to="/">Home</g-link>
+					</li>
+					<li>
+						<a class="empty">What We Do</a>
+						<ul aria-label="submenu">
+							<li>
+								<g-link to="/business-litigation">Business Litigation</g-link>
+							</li>
+							<li>
+								<g-link to="/employment-law-defense">Employment Law Defense</g-link>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<g-link to="/who-we-are">Who We Are</g-link>
+					</li>
+					<li>
+						<g-link to="/contact-us">Contact</g-link>
+					</li>
+				</ul>
+			</nav>
+			<div class="header--hero">
+				<!-- Optional Image Prop -->
+				<img src="../images/hero-landing.png" alt />
 			</div>
-			<ul>
-				<li>
-					<g-link to="/">Home</g-link>
-				</li>
-				<li>
-					<a class="empty">What We Do</a>
-					<ul aria-label="submenu">
-						<li>
-							<g-link to="/business-litigation">Business Litigation</g-link>
-						</li>
-						<li>
-							<g-link to="/employment-law-defense">Employment Law Defense</g-link>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<g-link to="/who-we-are">Who We Are</g-link>
-				</li>
-				<li>
-					<g-link to="/contact-us">Contact</g-link>
-				</li>
-			</ul>
-		</nav>
-		<div class="header--hero">
-			<!-- Optional Image Prop -->
-			<img src="../images/hero-landing.png" alt />
-		</div>
-	</header>
+		</header>
+	</div>
 </template>
 
 <script>
@@ -45,9 +47,7 @@ export default {};
 
 <style lang="sass" scoped>
 
-
     .header
-        // border: 1px solid blue //* for development, delete later
         justify-self: center
         width: 100vw
         display: flex
@@ -66,7 +66,6 @@ export default {};
             padding: var(--space-xs) 0 var(--space-xs)
 
         &--menu
-            width: 100%
             display: flex
             justify-content: space-around            
             align-items: flex-end
@@ -83,8 +82,6 @@ export default {};
                 max-width: 300px
                 margin-bottom: var(--space-sm)
                 margin-top: var(--space-md)
-
-
                 
             ul
                 display: flex
@@ -114,7 +111,6 @@ export default {};
 
                     &:hover,
                     &:focus-within
-                        // cursor: pointer
                         background: var(--color-a)
 
                     &:focus-within a
@@ -135,14 +131,8 @@ export default {};
                         li //submenu
                             min-width: 25ch
 
-                                
-             
-
-
         &--hero
-            // max-width: var(--max-width)
-            // max-height: 20vh
-            // height: 200px
+
             height: 25vh
             width: 100vw
             max-width: 100vw
@@ -160,9 +150,4 @@ export default {};
                 bottom: -50%
                 width: 100%
 
-
-    .full-bleed
-        width: 100vw
-        margin-left: 50%
-        transform: translateX(-50%)
 </style>
