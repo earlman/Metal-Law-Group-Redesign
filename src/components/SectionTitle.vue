@@ -1,9 +1,13 @@
 <template>
-	<div class="section-title">
-		<h2>
-			<slot>Insert Title into Component</slot>
-		</h2>
-		<slot v-if="this.$slots.detail" name="detail" class="section-title--detail"></slot>
+	<div class="section-title-container">
+		<div class="section-title">
+			<h2>
+				<slot>Insert Title into Component</slot>
+			</h2>
+			<div v-if="this.$slots.detail" class="section-title--detail">
+				<slot name="detail"></slot>
+			</div>
+		</div>
 	</div>
 </template>
 
@@ -13,25 +17,23 @@ export default {};
 
 <style lang="sass" scoped>
 
+.section-title-container
+    width: 100vw
+    border-top: 0
+    border-bottom: 2px solid var(--color-a)
+
 .section-title
-    left: 50%
-    margin-left: -51vw
-    margin-right: -51vw
-    position: relative
-    right: 50%
-    border: 1px solid var(--color-a)
+
     text-align: center
-    width: 102vw
     padding: var(--space-sm) 0
+    @include grid-main
+    place-items: center
 
     &>*
-        @include space-stack(var(--space-sm))
+        @include grid-full
+        @include space-stack(var(--space-md))
 
     &--detail
-        margin-bottom: var(--space-md)
+        max-width: 40ch
 
-    h2
-        box-sizing: border-box
-
-    
 </style>
