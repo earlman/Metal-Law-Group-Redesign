@@ -11,17 +11,10 @@ export default {};
 <style lang="sass" scoped>
 
 .cardgrid
-    // display: grid
-    // grid-template-columns: 1fr
-    // grid-template-rows: auto
-
     @include grid-main
     grid-gap: 0
-
-
     justify-items: stretch
     justify-content: center
-    // border-top: 1px solid var(--color-a)
 
     & > * // CARDS
 
