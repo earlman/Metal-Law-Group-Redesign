@@ -23,6 +23,8 @@ export default {};
 
         @include md
             // grid-column: span 3
+            &:nth-last-child(1)
+                border-bottom: none
 
 
             @include lg
@@ -36,6 +38,8 @@ export default {};
                     padding-right: 0
                     // border-right: 1px solid var(--color-a)
 
+                &:nth-last-child(2)
+                    border-bottom: none
 
 
 
