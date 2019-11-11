@@ -9,92 +9,96 @@
 				</p>
 			</template>
 		</PageTitle>
-		<section class="contact-info">
-			<div class="form--container">
-				<form class="form">
-					<input type="text" aria-placeholder="name" placeholder="Name" class="name" />
-					<input type="tel" aria-placeholder="Phone" placeholder="Phone" class="tel" />
-					<input type="email" aria-placeholder="Email" placeholder="Email" class="email" />
-					<textarea type="Message" aria-placeholder="Message" placeholder="Message" class="message"></textarea>
-				</form>
-			</div>
-			<div class="info">
-				<div class="info--description">
-					Whether you are a business owner with employees or an entrepreneur in the entertainment world your story is important to us.
-					We offer a FREE 15 Minute Consultation for anyone we feel we can help.
-					Fill out the form and we will reach back out to you as soon as possible.
+		<div class="contact-info--container">
+			<section class="contact-info">
+				<div class="form--container">
+					<form class="form">
+						<input type="text" aria-placeholder="name" placeholder="Name" class="name" />
+						<input type="tel" aria-placeholder="Phone" placeholder="Phone" class="tel" />
+						<input type="email" aria-placeholder="Email" placeholder="Email" class="email" />
+						<textarea type="Message" aria-placeholder="Message" placeholder="Message" class="message"></textarea>
+					</form>
 				</div>
-				<div class="info--details">
-					<h5>Phone:</h5>
-					<h5>323-289-2260</h5>
-					<h5>Fax:</h5>
-					<h5>323-289-2261</h5>
-					<h5>Address:</h5>
-					<h5>
-						725 S Figueroa Street #3065
-						<br />Los Angeles, CA 90017
-					</h5>
+				<div class="info">
+					<div class="info--description">
+						Whether you are a business owner with employees or an entrepreneur in the entertainment world your story is important to us.
+						We offer a FREE 15 Minute Consultation for anyone we feel we can help.
+						Fill out the form and we will reach back out to you as soon as possible.
+					</div>
+					<div class="info--details">
+						<h5>Phone:</h5>
+						<h5>323-289-2260</h5>
+						<h5>Fax:</h5>
+						<h5>323-289-2261</h5>
+						<h5>Address:</h5>
+						<h5>
+							725 S Figueroa Street #3065
+							<br />Los Angeles, CA 90017
+						</h5>
+					</div>
 				</div>
-			</div>
-		</section>
-		<SectionTitle>Directions</SectionTitle>
-		<section class="directions">
-			<div class="directions--map">
-				<GoogleMap />
-			</div>
-			<div class="directions--parking">
-				<h5>PARKING RATES (with validation):</h5>
-				<table>
-					<thead>
-						<td>Length of Stay</td>
-						<td>Price</td>
-						<td>Availability</td>
-					</thead>
-					<tbody>
-						<tr>
-							<td>1 hour</td>
-							<td>$1</td>
-							<td>Always Available</td>
-						</tr>
-						<tr>
-							<td>2 hours</td>
-							<td>$2.50</td>
-							<td>Always Available</td>
-						</tr>
-						<tr>
-							<td>4 hours</td>
-							<td>$4</td>
-							<td>Always Available</td>
-						</tr>
-						<tr>
-							<td>No Limit</td>
-							<td>$6</td>
-							<td>Saturday, Sunday, & after 4pm on Weekdays</td>
-						</tr>
+			</section>
+		</div>
+		<div class="directions--container">
+			<SectionTitle>Directions</SectionTitle>
+			<section class="directions">
+				<div class="directions--map">
+					<GoogleMap />
+				</div>
+				<div class="directions--parking">
+					<h5>PARKING RATES (with validation):</h5>
+					<table>
+						<thead>
+							<td>Length of Stay</td>
+							<td>Price</td>
+							<td>Availability</td>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1 hour</td>
+								<td>$1</td>
+								<td>Always Available</td>
+							</tr>
+							<tr>
+								<td>2 hours</td>
+								<td>$2.50</td>
+								<td>Always Available</td>
+							</tr>
+							<tr>
+								<td>4 hours</td>
+								<td>$4</td>
+								<td>Always Available</td>
+							</tr>
+							<tr>
+								<td>No Limit</td>
+								<td>$6</td>
+								<td>Saturday, Sunday, & after 4pm on Weekdays</td>
+							</tr>
 
-						<tr>
-							<td>--</td>
-							<td>Not Permitted</td>
-							<td>Overnight</td>
-						</tr>
-						<tr>
-							<td colspan="3">
-								Note: After 3 hours, standard office building rates apply
-								<strong>($3 every 10 minutes, $35 maximum)</strong>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="directions--instructions">
-				<h2>Parking Instructions</h2>
-				<p>Our office is adjacent to the DTLA Shopping Center FIGat7th. The easiest option is to park there and then come to the front desk of the Ernest & Young Plaza Building.</p>
-				<p>We do not offer validation but you can grab a coffee from Starbucks on the ground floor to get validated rates.</p>
-				<p>There are 500 shopping and dining parking spaces conveniently located at the 945 W. 8th Street parking structure adjacent to the FIGat7th retail center. Entrances to the parking structure are located on both 7th and 8th Streets.</p>
-				<p>The parking structure is open 24 hours a day / 7 days a week. Parking structure managed by ABM Parking. Call (213) 955-7945 for more information.</p>
-				<p>PLEASE NOTE: For discounted parking rates, you MUST have parking tickets validated in a store or restaurant and ONLY park on garage levels L1, L2, or L3. To avoid being charged a higher rate, DO NOT PARK on level L4 or higher.</p>
-			</div>
-		</section>
+							<tr>
+								<td>--</td>
+								<td>Not Permitted</td>
+								<td>Overnight</td>
+							</tr>
+							<tr>
+								<td colspan="3">
+									Note: After 3 hours, standard office building rates apply
+									<strong>($3 every 10 minutes, $35 maximum)</strong>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="directions--instructions">
+					<h2>Parking Instructions</h2>
+					<p>Our office is adjacent to the DTLA Shopping Center FIGat7th. The easiest option is to park there and then come to the front desk of the Ernest & Young Plaza Building.</p>
+					<p>We do not offer validation but you can grab a coffee from Starbucks on the ground floor to get validated rates.</p>
+					<p>There are 500 shopping and dining parking spaces conveniently located at the 945 W. 8th Street parking structure adjacent to the FIGat7th retail center. Entrances to the parking structure are located on both 7th and 8th Streets.</p>
+					<p>The parking structure is open 24 hours a day / 7 days a week. Parking structure managed by ABM Parking. Call (213) 955-7945 for more information.</p>
+					<p>PLEASE NOTE: For discounted parking rates, you MUST have parking tickets validated in a store or restaurant and ONLY park on garage levels L1, L2, or L3. To avoid being charged a higher rate, DO NOT PARK on level L4 or higher.</p>
+				</div>
+			</section>
+		</div>
 	</Layout>
 </template>
 
@@ -115,29 +119,36 @@ export default {
 <style lang="sass" scoped>
 
     section
-        padding: var(--space-md) var(--space-sm) var(--space-lg)
+        padding: var(--space-md) 0 var(--space-lg)
 
 
 
+
+    .contact-info--container
+        border-bottom: 2px solid var(--color-a)
 
     .contact-info
-        display: grid
-        grid-template-columns: 1fr 88vw 1fr
+        // display: grid
+        // grid-template-columns: 1fr 88vw 1fr
+
+        @include grid-main
+
         justify-content: center
         justify-items: center
 
-        @include lg
-            grid-template-columns: 1fr minmax(min-content,44vw) 44vw 1fr
-            
+        // @include lg
+        //     grid-template-columns: 1fr minmax(min-content,44vw) 44vw 1fr
 
 
+        @include lg 
+            padding-top: var(--space-lg)
 
         .form--container
-            grid-column: 2/-2
+            @include grid-full
             width: 100%
 
             @include lg
-                grid-column: 2
+                grid-column: 1 / 7
 
         .form
             display: grid
@@ -153,7 +164,7 @@ export default {
 
             @include lg
                 grid-template-columns: 1fr 1fr
-                padding-right: var(--space-sm)
+                padding-right: var(--space-md)
                 max-width: 600px
 
 
@@ -165,10 +176,11 @@ export default {
 
 
         .info
-            grid-column: 2/-2
+            @include grid-full
 
             @include lg
-                grid-column: 3
+                grid-column: 7 / 13
+                padding-left: var(--space-md)
 
             &--description
                 margin-bottom: var(--space-sm)
