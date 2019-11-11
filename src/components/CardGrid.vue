@@ -11,38 +11,34 @@ export default {};
 <style lang="sass" scoped>
 
 .cardgrid
-    display: grid
-    grid-template-columns: 1fr
-    grid-template-rows: auto
+    @include grid-main
+    grid-gap: 0
     justify-items: stretch
+    justify-content: center
 
-    border: 1px solid var(--color-a)
+    & > * // CARDS
 
-    
-    @include md
-        grid-template-columns: 1fr 44vw 44vw 1fr
-        &>*
-            &:nth-child(odd) 
-                padding-left: 0
-            &:nth-child(even)
-                padding-right: 0
-        
+        @include grid-full
+        border-bottom: 1px solid var(--color-a)
 
-        @include xl
-            grid-template-columns: 1fr 700px 700px 1fr
+        @include md
+            // grid-column: span 3
 
-    & > *
-        &:nth-child(odd) 
-            border-left: none
-            border-right: 1px solid var(--color-a)
 
-        &:nth-child(even)
-            border-left: 1px solid var(--color-a)
-            border-right: none
+            @include lg
+                grid-column: span 6
 
-    &::before,
-    &::after
-        content: ''
+                &:nth-child(odd) 
+                    padding-left: 0
+                    border-right: 1px solid var(--color-a)
+                    // border-left: 1px solid var(--color-a)
+                &:nth-child(even)
+                    padding-right: 0
+                    // border-right: 1px solid var(--color-a)
+
+
+
+
 
 
 </style>

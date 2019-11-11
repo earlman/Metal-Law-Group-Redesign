@@ -74,13 +74,13 @@ export default {
 
     &--info
         margin-bottom: var(--space-sm)
+        @include md
+            width: 40ch // keeps card size consistent
 
     &--arrow
         align-self: flex-end
         margin-left: var(--space-sm)
-        // position: relative
-        // bottom: -2rem
-        // padding: var(--space-xs)        
+
 
     &--icon
         margin-bottom: var(--space-xs)
@@ -88,7 +88,7 @@ export default {
 
 
     // when there's 2 columns, change the layout. See CardGrid.vue
-    @include lg
+    @include md
         flex-direction: row
         margin: 0 var(--space-md)
 
