@@ -23,7 +23,7 @@ export default {};
         align-items: center
         text-align: center
         padding: var(--space-md) 0 var(--space-lg)
-        border: 1px solid var(--color-a)
+        border-bottom: 2px solid var(--color-a)
         
 
         // full bleed properties. not sure about it yet
