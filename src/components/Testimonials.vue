@@ -104,7 +104,7 @@ export default {
     &--container
         animation: fadein 1.5s;
         border-radius: 1px
-        margin: var(--space-lg) 0 var(--space-sm)
+        margin: var(--space-md) var(--space-xs) var(--space-sm)
         padding: var(--space-md) 6vw var(--space-sm)
         background-color: var(--color-a)
         max-width: 768px
@@ -112,6 +112,7 @@ export default {
         justify-content: center
         
         @include md
+            margin-top: var(--space-lg)
             margin-left: var(--space-lg)
             margin-right: var(--space-lg)
 
