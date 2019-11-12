@@ -14,7 +14,7 @@
 				</PageTitle>
 			</section>
 			<SectionTitle>Our Services</SectionTitle>
-			<section>
+			<section class="our-services">
 				<CardGrid>
 					<Card :iconname="icons.policies4" linkto="/business-litigation">
 						Business & Commercial Litigation
@@ -31,49 +31,51 @@
 				</CardGrid>
 			</section>
 			<SectionTitle>Get in Touch</SectionTitle>
-			<section class="get-in-touch">
-				<div>
-					<table class="info">
-						<tbody>
-							<tr>
-								<td>
-									<h5>Phone:</h5>
-								</td>
-								<td class="info--detail">
-									<h5>323-289-2260</h5>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<h5>Fax:</h5>
-								</td>
-								<td class="info--detail">
-									<h5>323-289-2261</h5>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<h5>Address:</h5>
-								</td>
-								<td class="info--detail">
-									<h5>
-										725 S Figueroa Street
-										<br />#3065
-										<br />Los Angeles, CA 90017
-									</h5>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<form class="form">
-					<input type="text" aria-placeholder="name" placeholder="Name" class="name" />
-					<input type="tel" aria-placeholder="Phone" placeholder="Phone" class="tel" />
-					<input type="email" aria-placeholder="Email" placeholder="Email" class="email" />
-					<textarea type="Message" aria-placeholder="Message" placeholder="Message" class="message"></textarea>
-					<input type="submit" value="Submit" />
-				</form>
-			</section>
+			<div class="get-in-touch--container">
+				<section class="get-in-touch">
+					<div class="info--container">
+						<table class="info">
+							<tbody>
+								<tr>
+									<td>
+										<h5>Phone:</h5>
+									</td>
+									<td class="info--detail">
+										<h5>323-289-2260</h5>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h5>Fax:</h5>
+									</td>
+									<td class="info--detail">
+										<h5>323-289-2261</h5>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h5>Address:</h5>
+									</td>
+									<td class="info--detail">
+										<h5>
+											725 S Figueroa Street
+											<br />#3065
+											<br />Los Angeles, CA 90017
+										</h5>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<form class="form">
+						<input type="text" aria-placeholder="name" placeholder="Name" class="name" />
+						<input type="tel" aria-placeholder="Phone" placeholder="Phone" class="tel" />
+						<input type="email" aria-placeholder="Email" placeholder="Email" class="email" />
+						<textarea type="Message" aria-placeholder="Message" placeholder="Message" class="message"></textarea>
+						<input type="submit" value="Submit" />
+					</form>
+				</section>
+			</div>
 			<SectionTitle>
 				Find a Professional
 				<template v-slot:detail>
@@ -125,19 +127,27 @@ export default {
 
 
 
-
+    .our-services
+        border-bottom: 2px solid var(--color-a)
     
+    .get-in-touch--container
+        border-bottom: 2px solid var(--color-a)
     .get-in-touch
-        border: 1px solid var(--color-a)
-        padding: var(--space-md) var(--space-sm)
+        padding: var(--space-md) 0
         display: flex
         flex-direction: column
         justify-content: center
+
+        @include grid-main
+
+        &>*
+            @include grid-full
 
         .info
             width: 100%
             margin-bottom: var(--space-sm)
             height: 2rem
+
 
             tr
                 height: 30%
@@ -156,35 +166,37 @@ export default {
             grid-gap: var(--space-sm)
 
 
+
             &>*
                 max-width: 100%
 
 
 
         @include md
-            padding: var(--space-md) var(--space-lg)
+            padding-top: var(--space-md) 
 
 
             @include lg
-                display: grid
-                grid-template-columns: 1fr 44vw 44vw 1fr
+                // display: grid
+                // grid-template-columns: 1fr 44vw 44vw 1fr
                 padding-top: var(--space-lg)
 
                 &>*
-                    
                     padding: 0 var(--space-md)
+
+                .info--container
+                    grid-column: 1 / 7
 
                 .info
                     padding-left: var(--space-sm)
                     justify-self: end
                     max-width: 600px
 
-
                 .form
                     grid-template-columns: 1fr 1fr
                     padding-right: var(--space-sm)
                     max-width: 600px
-
+                    grid-column: 7 / 13
 
                     .name
                         grid-column: 1/-1
@@ -193,8 +205,6 @@ export default {
                         grid-column: 1/-1
                         
 
-                &::before,
-                &::after
-                    content: ''
+
 
 </style>
