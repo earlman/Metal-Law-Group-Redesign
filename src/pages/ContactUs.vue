@@ -187,16 +187,21 @@ export default {
 
 
     .directions
-        display: grid
-        grid-template-columns: 1fr 88vw 1fr
+        // display: grid
+        // grid-template-columns: 1fr 88vw 1fr
+        @include grid-main
+
         justify-content: center
         justify-items: center
 
-        @include lg
-            grid-template-columns: 1fr 44vw 44vw 1fr
+        @include lg 
+            padding-top: var(--space-lg)
+            
+        // @include lg
+        //     grid-template-columns: 1fr 44vw 44vw 1fr
 
         &--map
-            grid-column: 2/-2
+            grid-column: 1 / -1
 
 
             border: 3px solid var(--color-a)
@@ -215,10 +220,10 @@ export default {
                 flex-grow: 1
 
             @include lg
-                grid-column: 2
+                grid-column: 1 / 7
 
         &--parking
-            grid-column: 2/-2
+            grid-column: 1 / -1
             margin-bottom: var(--space-md)
 
             h5
@@ -236,14 +241,14 @@ export default {
                 padding: var(--space-xs) 0
 
             @include lg
-                grid-column: 2
+                grid-column: 1 / 7
 
         &--instructions
-            grid-column: 2/-2
+            grid-column: 1 / -1
             width: 100%
 
             @include lg
-                grid-column: 3
+                grid-column: 7 / 13
                 grid-row: 1/3
                 padding: 0 var(--space-md)
                 margin-top: -10px
