@@ -51,7 +51,12 @@ export default {
 .card-wrapper
 
     width: 100%
-    padding: var(--space-lg) var(--space-sm) var(--space-md)
+    padding-top: var(--space-lg) 
+    padding-bottom: var(--space-md)
+
+    @include md
+        padding-left:  var(--space-sm)
+        padding-right:  var(--space-sm)
 
     // &:nth-child(odd) .card
     //     justify-content: flex-end

@@ -21,10 +21,11 @@ export default {};
         @include grid-full
         border-bottom: 1px solid var(--color-a)
 
+        &:nth-last-child(1)
+            border-bottom: none
+
         @include md
             // grid-column: span 3
-            &:nth-last-child(1)
-                border-bottom: none
 
 
             @include lg
