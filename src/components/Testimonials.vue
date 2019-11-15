@@ -42,25 +42,41 @@ export default {
 				{
 					id: 0,
 					quote:
-						"Richard Jefferson is a Mensch and a gentleman who is also well-versed in cutting-edge legal developments that he employs to help his clients, from the large to the very small. He is especially good about looking after the business interests of the ‘little guy’ and is just as well equipped to handle large, complex and far reaching deals.",
-					name: "Tess Taylor",
-					occupation: "President Narip",
+						"The guys at M.E.T.A.L. really understand business and seeing things from an entrepreneur’s perspective. I not only condsider them for any legal advice but when I want to bounce business ideas of someone as well.",
+					name: "Marc Kreiner",
+					occupation: "Former President of Tapout, Restaurant Owner",
 					active: false
 				},
 				{
 					id: 1,
 					quote:
-						"Richard Jefferson is a Mensch and a gentleman who is also well-versed in cutting-edge legal developments that he employs to help his clients, from the large to the very small. He is especially good about looking after the business interests of the ‘little guy’ and is just as well equipped to handle large, complex and far reaching deals.",
-					name: "David Rosenhaus",
-					occupation: "Owner of DFN Graphics Company",
+						"I love working with the lawyers at METAL because its not just a bunch of legal talk. They are business people and entrepreneurs themselves so they understand how we think and craft their legal strategies around that.",
+					name: "Marcus Kowal",
+					occupation: "Ownder of Systems Training Center",
 					active: true
 				},
 				{
 					id: 2,
 					quote:
-						"Richard Jefferson is a Mensch and a gentleman who is also well-versed in cutting-edge legal developments that he employs to help his clients, from the large to the very small. He is especially good about looking after the business interests of the ‘little guy’ and is just as well equipped to handle large, complex and far reaching deals.",
-					name: "Jasmine Diaz",
-					occupation: "Owner of The J. Diaz Company",
+						"My marketing business grew quickly and it was great but it became a nightmare when legal disputes started popping up. I thought I was going to lose everything I worked so hard for. Luckily I found the folks at METAL. They parachuted in and saved the day. My business is now growing as strong as ever!",
+					name: "Rey Valentin",
+					occupation: "Owner of Rapid Customers",
+					active: false
+				},
+				{
+					id: 3,
+					quote:
+						"We needed John to review a contract for us and he was able to find all the subtle ways we would have been at a disadvantage had we signed the original. With his input, we were able to negotiate from a position of power and successfully sign an equitable agreement.",
+					name: "David Rosenhaus",
+					occupation: "Owner, DFN Graphics Company",
+					active: false
+				},
+				{
+					id: 3,
+					quote:
+						"Swift, strong, and detail oriented are all words to describe John Fagerholm. I’ve caught him in the midst of chaos and he still took a few minutes to give me life-changing information. It’s definitely who you know and who knows you. Call him when you need him, I do!",
+					name: "Echo Hattix",
+					occupation: "Owner, Echoing Soundz",
 					active: false
 				}
 			]
