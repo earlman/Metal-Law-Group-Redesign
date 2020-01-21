@@ -16,13 +16,19 @@
 			<SectionTitle>Our Services</SectionTitle>
 			<section class="our-services">
 				<CardGrid>
-					<Card :iconname="icons.policies4" linkto="/business-litigation">
+					<Card
+						:iconname="icons.policies4"
+						linkto="/business-litigation"
+					>
 						Business & Commercial Litigation
 						<template
 							v-slot:detail
 						>We can help you in breach of contract cases, joint partnership ventures gone bad, LLC lawsuits, and other business disputes.</template>
 					</Card>
-					<Card :iconname="icons.defense" linkto="/employment-law-defense">
+					<Card
+						:iconname="icons.defense"
+						linkto="/employment-law-defense"
+					>
 						Employment Defense
 						<template
 							v-slot:detail
@@ -67,19 +73,17 @@
 							</tbody>
 						</table>
 					</div>
-					<form class="form">
-						<input type="text" aria-placeholder="name" placeholder="Name" class="name" />
-						<input type="tel" aria-placeholder="Phone" placeholder="Phone" class="tel" />
-						<input type="email" aria-placeholder="Email" placeholder="Email" class="email" />
-						<textarea type="Message" aria-placeholder="Message" placeholder="Message" class="message"></textarea>
-						<input type="submit" value="Submit" />
-					</form>
+					<contact-form />
 				</section>
 			</div>
 			<SectionTitle>
 				Find a Professional
 				<template v-slot:detail>
-					<input type="search" name id />
+					<input
+						type="search"
+						name
+						id
+					/>
 				</template>
 			</SectionTitle>
 			<SectionTitle>Our Success Stories</SectionTitle>
@@ -101,6 +105,7 @@ import PageTitle from "~/components/PageTitle.vue";
 import Testimonials from "~/components/Testimonials.vue";
 import Icon from "~/components/Icon.vue";
 import icons from "~/icons.js";
+import ContactForm from "~/components/ContactForm";
 
 export default {
 	components: {
@@ -111,7 +116,8 @@ export default {
 		Card,
 		CardGrid,
 		Testimonials,
-		Icon
+		Icon,
+		ContactForm
 	},
 	metaInfo: {
 		title: "Metal Law Group"
@@ -159,11 +165,7 @@ export default {
             .info--detail
                 text-align: right
     
-        .form
-            display: grid
-            grid-template-columns: 1fr
-            grid-auto-rows: min-content
-            grid-gap: var(--space-sm)
+
 
 
 
@@ -192,18 +194,6 @@ export default {
                     justify-self: end
                     max-width: 600px
 
-                .form
-                    grid-template-columns: 1fr 1fr
-                    padding-right: var(--space-sm)
-                    max-width: 600px
-                    grid-column: 7 / 13
-
-                    .name
-                        grid-column: 1/-1
-
-                    .message
-                        grid-column: 1/-1
-                        
 
 
 
