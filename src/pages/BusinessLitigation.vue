@@ -22,7 +22,7 @@
 					>A breach of contract can lead to litigation and that can prove costly. We can help get the matter resolved in your best interest and as quickly as possible.</template>
 				</Card>
 				<div />
-				<div />  
+				<div />
 				<Card :iconname="icons.contract">
 					Breach of Fiduciary Duty
 					<template
@@ -83,6 +83,9 @@ export default {
 </script>
 
 <style lang="sass" scoped>
+.partners-note
+    h2
+        margin-bottom: 0
     
 
 </style>
