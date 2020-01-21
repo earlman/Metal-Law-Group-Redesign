@@ -16,33 +16,22 @@ export default {};
     justify-items: stretch
     justify-content: center
 
+
     & > * // CARDS
+
 
         @include grid-full
         border-bottom: 1px solid var(--color-a)
 
-        &:nth-last-child(1)
-            border-bottom: none
+        @include lg
+            grid-column: span 6
 
-        @include md
-            // grid-column: span 3
+            &:nth-child(odd) 
+                padding-left: 0
+                border-right: 1px solid var(--color-a)
 
-
-            @include lg
-                grid-column: span 6
-
-                &:nth-child(odd) 
-                    padding-left: 0
-                    border-right: 1px solid var(--color-a)
-                    // border-left: 1px solid var(--color-a)
-                &:nth-child(even)
-                    padding-right: 0
-                    // border-right: 1px solid var(--color-a)
-
-                &:nth-last-child(2)
-                    border-bottom: none
-
-
+            &:nth-child(even)
+                padding-right: 0
 
 
 

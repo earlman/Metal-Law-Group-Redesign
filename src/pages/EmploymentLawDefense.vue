@@ -40,8 +40,7 @@
 						v-slot:detail
 					>You do not have to sit there and let the Labor Board push you around. We can attend your notice of claim and conference or hearing with you and help defend your business.</template>
 				</Card>
-				<div />
-				<div />
+
 				<Card :iconname="icons.workerscomp">
 					Workers Comp Claims
 					<template
@@ -54,8 +53,6 @@
 						v-slot:detail
 					>We can create a custom Policies and Procedures package that will keep your business out of trouble with labor laws and out of the cross hairs of greedy employee side attorneys. We also offer a 1 day onsite audit to go over your entire business with you.</template>
 				</Card>
-				<div />
-				<div />
 
 				<Card :iconname="icons.harassment">
 					Sexual Harassment Defense

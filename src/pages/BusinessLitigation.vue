@@ -21,8 +21,7 @@
 						v-slot:detail
 					>A breach of contract can lead to litigation and that can prove costly. We can help get the matter resolved in your best interest and as quickly as possible.</template>
 				</Card>
-				<div />
-				<div />
+
 				<Card :iconname="icons.contract">
 					Breach of Fiduciary Duty
 					<template
