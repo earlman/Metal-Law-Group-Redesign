@@ -19,7 +19,7 @@
 						allowfullscreen
 					></iframe>
 				</div>
-				<p>
+				<p class="overview--text">
 					We focus our practice on employment law defense and ONLY representing and protecting California Employers!
 					If you are have a business in California and are having any issues with employees you have come to the right place.
 				</p>
@@ -126,14 +126,20 @@ export default {
         justify-content: center
 
         &--youtube
-            border: 3px solid var(--color-a)
-            color: var(--color-a)
-            height: 42vw
-            width: 80vw
-            max-height: 315px
-            max-width: 560px
-            text-align: center
-            margin: 0 var(--space-md) var(--space-md) 
+            height: 60vw
+            width: 88vw
+            margin-top: 0
+            margin-bottom:  var(--space-md) 
+
+            @include md
+                max-height: 315px
+                max-width: 560px
+
+            @include lg
+                margin-left: var(--space-md)
+                margin-right: var(--space-lg)
+        &--text
+            max-width: 400px
         
 
     .overview--container, .employee-lawsuit-prevention, .services
