@@ -73,7 +73,7 @@
 							</tbody>
 						</table>
 					</div>
-					<contact-form />
+					<contact-form class="form-component" />
 				</section>
 			</div>
 			<SectionTitle>
@@ -193,6 +193,13 @@ export default {
                     padding-left: var(--space-sm)
                     justify-self: end
                     max-width: 600px
+
+
+                .form
+                    grid-template-columns: 1fr 1fr
+                    padding-right: var(--space-sm)
+                    max-width: 600px
+                    grid-column: 7 / 13
 
 
 
