@@ -3,6 +3,7 @@
 		<!-- How you treat size of the Icon is up to you. I stick to default `1em` or `size` props with 1:1 ratio -->
 		<svg
 			version="1.0"
+            style="overflow: visible;"
 			:width="size || name.size.width"
 			:height="size || name.size.height"
 			:viewBox="viewBox || name.viewBox"
