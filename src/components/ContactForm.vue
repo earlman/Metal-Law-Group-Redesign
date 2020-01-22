@@ -108,7 +108,6 @@ export default {
     @include lg
 
         grid-template-columns: 1fr 1fr
-        padding-right: var(--space-sm)
         max-width: 600px
 
 

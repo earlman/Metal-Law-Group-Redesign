@@ -125,6 +125,7 @@ export default {
         @include grid-main
         justify-content: center
         justify-items: center
+        max-width: var(--max-width)
 
 
         @include lg 
@@ -154,6 +155,8 @@ export default {
         @include grid-main
         justify-content: center
         justify-items: center
+        max-width: var(--max-width)
+
 
         @include lg 
             padding-top: var(--space-lg)

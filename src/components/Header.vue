@@ -7,7 +7,11 @@
 			<nav class="p-nav header--menu">
 				<div class="header--menu--logo">
 					<g-link to="/">
-						<img src="../images/logo.svg" alt="Metal Law Group Logo" class="logo" />
+						<img
+							src="../images/logo.svg"
+							alt="Metal Law Group Logo"
+							class="logo"
+						/>
 					</g-link>
 				</div>
 				<ul>
@@ -35,7 +39,10 @@
 			</nav>
 			<div class="header--hero">
 				<!-- Optional Image Prop -->
-				<img src="../images/hero-landing.png" alt />
+				<img
+					src="../images/hero-landing.png"
+					alt
+				/>
 			</div>
 		</header>
 	</div>
@@ -71,7 +78,7 @@ export default {};
             align-items: flex-end
             flex-wrap: wrap
             width: 88vw
-            max-width: 1400px
+            max-width: var(--max-width)
             margin-top: 20px
 
             @include landscape
