@@ -37,10 +37,13 @@
 					</li>
 				</ul>
 			</nav>
-			<div class="header--hero">
+			<div
+				v-show="!hideHero"
+				class="header--hero"
+			>
 				<!-- Optional Image Prop -->
 				<img
-					src="../images/hero-landing.png"
+					:src="require(`../images/${heroImage}.png`)"
 					alt
 				/>
 			</div>
@@ -49,7 +52,18 @@
 </template>
 
 <script>
-export default {};
+export default {
+	props: {
+		hideHero: {
+			type: Boolean,
+			default: false
+		},
+		heroImage: {
+			type: String,
+			default: "hero-landing"
+		}
+	}
+};
 </script>
 
 <style lang="sass" scoped>

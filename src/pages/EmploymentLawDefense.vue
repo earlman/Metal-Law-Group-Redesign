@@ -1,5 +1,5 @@
 <template>
-	<Layout>
+	<Layout heroImage="hero-employmentlawdefense">
 		<PageTitle>
 			Employment Law Defense
 			<template

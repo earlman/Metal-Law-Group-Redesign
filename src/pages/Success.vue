@@ -1,5 +1,5 @@
 <template>
-	<Layout>
+	<Layout hideHero>
 		<div class="container">
 			<SectionTitle class="section-title">
 				Thank You for Your Submission!
@@ -31,9 +31,11 @@ export default {
 
 <style lang="sass" scoped>
 .container
-    min-height: 30vh
+    min-height: 70vh
     display: flex
-    
+    .section-title
+        border-top: 2px solid var(--color-a)
+        
 
 
 </style>

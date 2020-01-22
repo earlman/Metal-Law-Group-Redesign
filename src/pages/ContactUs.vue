@@ -1,5 +1,5 @@
 <template>
-	<Layout>
+	<Layout heroImage="hero-contactus">
 		<PageTitle>
 			Contact Us
 			<template v-slot:detail>

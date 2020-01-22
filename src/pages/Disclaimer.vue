@@ -1,6 +1,6 @@
 <template>
-	<Layout>
-		<SectionTitle>Disclaimer</SectionTitle>
+	<Layout hideHero>
+		<SectionTitle class="section-title">Disclaimer</SectionTitle>
 		<DisplayText class="disclaimer">
 			<p>
 				© 2017, M.E.T.A.L. Law Group, LLP. All Rights Reserved. M.E.T.A.L. is a registered trademark with the United States Patent and Trademark Office.
@@ -34,5 +34,6 @@ export default {
 
 <style lang="sass" scoped>
     
-
+.section-title
+    border-top: 2px solid var(--color-a)
 </style>

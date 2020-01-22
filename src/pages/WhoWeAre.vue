@@ -1,11 +1,16 @@
 <template>
-	<Layout>
+	<Layout heroImage="hero-whoweare">
 		<PageTitle>
 			Who We Are
 			<template v-slot:detail>
 				<p class="search-text">Search for an employee below</p>
 				<div>
-					<input type="search" name id v-model="searchTerm" />
+					<input
+						type="search"
+						name
+						id
+						v-model="searchTerm"
+					/>
 				</div>
 			</template>
 		</PageTitle>

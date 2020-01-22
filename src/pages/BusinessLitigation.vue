@@ -1,5 +1,5 @@
 <template>
-	<Layout>
+	<Layout heroImage="hero-businesslitigation">
 		<PageTitle>
 			Business & Commercial Litigation
 			<template v-slot:detail>
