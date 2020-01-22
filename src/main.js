@@ -2,6 +2,8 @@ import DefaultLayout from '~/layouts/Default.vue'
 import * as VueGoogleMaps from "vue2-google-maps"
 import '~/styles/index.sass'
 
+require('typeface-open-sans')
+
 
 
 export default function (Vue) {
