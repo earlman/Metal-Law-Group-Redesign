@@ -85,6 +85,10 @@ export default {
 .partners-note
     h2
         margin-bottom: 0
+
+section
+    border-bottom: 2px solid var(--color-a)
+
     
 
 </style>
