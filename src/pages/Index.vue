@@ -79,11 +79,9 @@
 			<SectionTitle>
 				Find a Professional
 				<template v-slot:detail>
-					<input
-						type="search"
-						name
-						id
-					/>
+					<g-link to="/who-we-are">
+						<button>Go to Search&nbsp;&nbsp;&#8594;</button>
+					</g-link>
 				</template>
 			</SectionTitle>
 			<SectionTitle>Our Success Stories</SectionTitle>
