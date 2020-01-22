@@ -10,8 +10,14 @@
 <template>
 	<div>
 		<div class="testimonials">
-			<div v-for="testimonial in testimonials" :key="testimonial.name">
-				<div class="testimonials--container" v-if="testimonial.active">
+			<div
+				v-for="testimonial in testimonials"
+				:key="testimonial.name"
+			>
+				<div
+					class="testimonials--container"
+					v-if="testimonial.active"
+				>
 					<transition name="fade">
 						<div class="testimonials--content">
 							<p class="testimonials--quote">{{testimonial.quote}}</p>
@@ -72,7 +78,7 @@ export default {
 					active: false
 				},
 				{
-					id: 3,
+					id: 4,
 					quote:
 						"Swift, strong, and detail oriented are all words to describe John Fagerholm. I’ve caught him in the midst of chaos and he still took a few minutes to give me life-changing information. It’s definitely who you know and who knows you. Call him when you need him, I do!",
 					name: "Echo Hattix",
@@ -126,6 +132,7 @@ export default {
         max-width: 768px
         display: flex
         justify-content: center
+        height: 300px // adjust if necessary
         
         @include md
             margin-top: var(--space-lg)
