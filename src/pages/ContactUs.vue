@@ -12,12 +12,7 @@
 		<div class="contact-info--container">
 			<section class="contact-info">
 				<div class="form--container">
-					<form class="form">
-						<input type="text" aria-placeholder="name" placeholder="Name" class="name" />
-						<input type="tel" aria-placeholder="Phone" placeholder="Phone" class="tel" />
-						<input type="email" aria-placeholder="Email" placeholder="Email" class="email" />
-						<textarea type="Message" aria-placeholder="Message" placeholder="Message" class="message"></textarea>
-					</form>
+					<contact-form />
 				</div>
 				<div class="info">
 					<div class="info--description">
@@ -106,12 +101,14 @@
 import SectionTitle from "~/components/SectionTitle";
 import PageTitle from "~/components/PageTitle";
 import GoogleMap from "~/components/GoogleMap";
+import ContactForm from "~/components/ContactForm";
 
 export default {
 	components: {
 		SectionTitle,
 		PageTitle,
-		GoogleMap
+		GoogleMap,
+		ContactForm
 	}
 };
 </script>
@@ -121,23 +118,13 @@ export default {
     section
         padding: var(--space-md) 0 var(--space-lg)
 
-
-
-
     .contact-info--container
         border-bottom: 2px solid var(--color-a)
 
     .contact-info
-        // display: grid
-        // grid-template-columns: 1fr 88vw 1fr
-
         @include grid-main
-
         justify-content: center
         justify-items: center
-
-        // @include lg
-        //     grid-template-columns: 1fr minmax(min-content,44vw) 44vw 1fr
 
 
         @include lg 
@@ -150,60 +137,29 @@ export default {
             @include lg
                 grid-column: 1 / 7
 
-        .form
-            display: grid
-            grid-template-columns: 1fr
-            grid-auto-rows: min-content
-            grid-gap: var(--space-sm)
-            margin-left: auto
-            margin-right: auto
-            margin-bottom: var(--space-md)
-
-            &>*
-                max-width: 100%
-
-            @include lg
-                grid-template-columns: 1fr 1fr
-                padding-right: var(--space-md)
-                max-width: 600px
-
-
-                .name
-                    grid-column: 1/-1
-
-                .message
-                    grid-column: 1/-1
-
-
         .info
+            margin-top: var(--space-md)
+            
             @include grid-full
 
             @include lg
+                margin-top: 0
                 grid-column: 7 / 13
                 padding-left: var(--space-md)
 
             &--description
                 margin-bottom: var(--space-sm)
 
-
     .directions
-        // display: grid
-        // grid-template-columns: 1fr 88vw 1fr
         @include grid-main
-
         justify-content: center
         justify-items: center
 
         @include lg 
             padding-top: var(--space-lg)
-            
-        // @include lg
-        //     grid-template-columns: 1fr 44vw 44vw 1fr
 
         &--map
             grid-column: 1 / -1
-
-
             border: 3px solid var(--color-a)
             color: var(--color-a)
             height: 42vw
@@ -234,7 +190,6 @@ export default {
                 padding-right: var(--space-xs)
                 vertical-align: top
                 border-top: 1px solid var(--color-a)
-                // border-bottom: 1px solid var(--color-a)
 
             thead td
                 font-weight: 600

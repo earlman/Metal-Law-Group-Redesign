@@ -49,6 +49,7 @@
 		<input
 			type="submit"
 			value="Submit"
+			class="submit"
 		/>
 	</form>
 </template>
@@ -97,12 +98,25 @@ export default {
     grid-auto-rows: min-content
     grid-gap: var(--space-sm)
 
+
+    @include md
+        .submit
+            grid-column: 1 / -1
+            width: 25ch
+            margin-left: auto
+
     @include lg
+
+        grid-template-columns: 1fr 1fr
+        padding-right: var(--space-sm)
+        max-width: 600px
+
+
         .name
             grid-column: 1/-1
 
         .message
             grid-column: 1/-1
-            
+        
 
     </style>
