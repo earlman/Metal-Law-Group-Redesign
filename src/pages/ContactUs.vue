@@ -16,9 +16,11 @@
 				</div>
 				<div class="info">
 					<div class="info--description">
-						Whether you are a business owner with employees or an entrepreneur in the entertainment world your story is important to us.
-						We offer a FREE 15 Minute Consultation for anyone we feel we can help.
-						Fill out the form and we will reach back out to you as soon as possible.
+						<p>
+							Whether you are a business owner with employees or an entrepreneur in the entertainment world your story is important to us.
+							We offer a FREE 15 Minute Consultation for anyone we feel we can help.
+							Fill out the form and we will reach back out to you as soon as possible.
+						</p>
 					</div>
 					<div class="info--details">
 						<h5>Phone:</h5>
@@ -124,7 +126,7 @@ export default {
     .contact-info
         @include grid-main
         justify-content: center
-        justify-items: center
+
         max-width: var(--max-width)
 
 
@@ -154,7 +156,6 @@ export default {
     .directions
         @include grid-main
         justify-content: center
-        justify-items: center
         max-width: var(--max-width)
 
 
@@ -168,12 +169,12 @@ export default {
             height: 42vw
             width: 100%
             max-height: 315px
-            max-width: 560px
+            // max-width: 560px
             text-align: center
             margin: 0 auto var(--space-sm)
             display: flex
             align-content: stretch
-            justify-content: stretch        
+            justify-content: space-between        
 
             *
                 flex-grow: 1
