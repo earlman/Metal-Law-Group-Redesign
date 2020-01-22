@@ -14,7 +14,7 @@
 				</div>
 			</template>
 		</PageTitle>
-		<SectionTitle v-if="searchResults">Results</SectionTitle>
+		<SectionTitle v-show="searchResults[0]">Results</SectionTitle>
 		<div class="results">
 			<EmployeeCardGrid>
 				<EmployeeCard
