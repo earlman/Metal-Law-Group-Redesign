@@ -2,7 +2,11 @@
 	<Layout class="employee">
 		<section class="general">
 			<div class="general--photo">
-				<g-image :src="$page.employee.acf.photo" alt="Employee Photo" width="500" />
+				<g-image
+					:src="$page.employee.acf.photo"
+					alt="Employee Photo"
+					width="500"
+				/>
 
 				<!-- <img :src="$page.employee.acf.photo" alt="Employee Photo" /> -->
 			</div>
@@ -26,7 +30,7 @@
 				<h2>Experience</h2>
 				<p>{{$page.employee.acf.experience}}</p>
 			</section>
-			<section class="additional-info">
+			<!-- <section class="additional-info">
 				<h5>Bar Admissions</h5>
 				<ul>
 					<li>{{$page.employee.acf.barAdmissions}}</li>
@@ -39,7 +43,7 @@
 				<ul>
 					<li>{{$page.employee.acf.education}}</li>
 				</ul>
-			</section>
+			</section>-->
 		</div>
 	</Layout>
 </template>
