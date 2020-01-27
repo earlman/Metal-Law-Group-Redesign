@@ -132,7 +132,8 @@ export default {
         max-width: 768px
         display: flex
         justify-content: center
-        height: 300px // adjust if necessary
+        height: max-content // adjust if necessary
+        
         
         @include md
             margin-top: var(--space-lg)
