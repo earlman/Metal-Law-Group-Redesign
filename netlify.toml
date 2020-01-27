@@ -4,9 +4,3 @@
   
 [template.environment]
   WORDPRESS_URL = "https://www.metallawgroup.com"
-
-[[redirects]]
-  from = "/*"
-  to = "/"
-  status = 404
-  force = true # COMMENT: ensure that we always redirect
