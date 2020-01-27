@@ -1,5 +1,9 @@
 <template>
-	<Layout heroImage="hero-businesslitigation">
+	<Layout
+		heroImage="hero-businesslitigation"
+		attribution="Photo by Dylan Gillis on Unsplash
+"
+	>
 		<PageTitle>
 			Business & Commercial Litigation
 			<template v-slot:detail>

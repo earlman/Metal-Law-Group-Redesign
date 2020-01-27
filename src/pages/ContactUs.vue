@@ -1,5 +1,8 @@
 <template>
-	<Layout heroImage="hero-contactus">
+	<Layout
+		heroImage="hero-contactus"
+		attribution="Photo by Trent Erwin on Unsplash"
+	>
 		<PageTitle>
 			Contact Us
 			<template v-slot:detail>

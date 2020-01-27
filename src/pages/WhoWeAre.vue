@@ -1,5 +1,8 @@
 <template>
-	<Layout heroImage="hero-whoweare">
+	<Layout
+		heroImage="hero-whoweare"
+		attribution="Photo by Unnamed Author on Pexels"
+	>
 		<PageTitle>
 			Who We Are
 			<template v-slot:detail>

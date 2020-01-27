@@ -2,7 +2,11 @@
 	<footer class="footer">
 		<nav class="footer--nav">
 			<div class="footer--logo">
-				<img src="../images/logo-alt.svg" alt="Metal Law Group Logo" class="logo" />
+				<img
+					src="../images/logo-alt.svg"
+					alt="Metal Law Group Logo"
+					class="logo"
+				/>
 			</div>
 			<div class="footer--links p-small">
 				<div class="footer--submenu">
@@ -42,23 +46,41 @@
 					<ul>
 						<li>
 							<a href="https://twitter.com/metallawgroup">
-								<Icon :name="icons.twitter" size="16pt" color="white" />
+								<Icon
+									:name="icons.twitter"
+									size="16pt"
+									color="white"
+								/>
 							</a>
 						</li>
 						<li>
 							<a href="https://www.linkedin.com/company/m.e.t.a.l.-law-group-llp">
-								<Icon :name="icons.linkedin" size="16pt" color="white" />
+								<Icon
+									:name="icons.linkedin"
+									size="16pt"
+									color="white"
+								/>
 							</a>
 						</li>
 						<li>
 							<a href="https://www.facebook.com/metallawgroup/">
-								<Icon :name="icons.facebook" size="16pt" color="white" />
+								<Icon
+									:name="icons.facebook"
+									size="16pt"
+									color="white"
+								/>
 							</a>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</nav>
+		<aside
+			v-if="attribution"
+			class="attribution"
+		>
+			<span>{{attribution}}</span>
+		</aside>
 		<aside class="copyright p-copyright">
 			<span>© &nbsp foundations.dev. All Rights Reserved. 2019</span>
 		</aside>
@@ -76,7 +98,12 @@ export default {
 
 	data: () => ({
 		icons
-	})
+	}),
+	props: {
+		attribution: {
+			type: String
+		}
+	}
 };
 </script>
 
@@ -157,4 +184,9 @@ export default {
             @include grid-full
             text-align: center
             margin-bottom: var(--space-xs)
+
+        .attribution
+            font-size: 12px
+            font-style: italic
+            
 </style>

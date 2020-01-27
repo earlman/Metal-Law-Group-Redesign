@@ -6,7 +6,7 @@
 		/>
 
 		<slot />
-		<Footer />
+		<Footer :attribution="attribution" />
 	</div>
 </template>
 
@@ -23,7 +23,8 @@ export default {
 		hideHero: {},
 		heroImage: {
 			default: "hero-landing"
-		}
+		},
+		attribution: {}
 	}
 };
 </script>

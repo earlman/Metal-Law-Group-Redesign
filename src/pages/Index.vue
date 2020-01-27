@@ -1,5 +1,7 @@
 <template>
-	<Layout>
+	<Layout attribution="
+Photo by Philipp Birmes from Pexels. 
+">
 		<main>
 			<section>
 				<PageTitle>
