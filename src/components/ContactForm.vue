@@ -21,6 +21,7 @@
 		</p>
 		<input
 			type="text"
+			name="name"
 			aria-placeholder="name"
 			placeholder="Name"
 			class="name"
@@ -28,6 +29,7 @@
 		/>
 		<input
 			type="tel"
+			name="tel"
 			aria-placeholder="Phone"
 			placeholder="Phone"
 			class="tel"
@@ -35,6 +37,7 @@
 		/>
 		<input
 			type="email"
+			name="email"
 			aria-placeholder="Email"
 			placeholder="Email"
 			class="email"
@@ -42,6 +45,7 @@
 		/>
 		<textarea
 			type="Message"
+			name="message"
 			aria-placeholder="Message"
 			placeholder="Message"
 			class="message"
