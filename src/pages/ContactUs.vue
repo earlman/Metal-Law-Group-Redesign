@@ -15,7 +15,7 @@
 		<div class="contact-info--container">
 			<section class="contact-info">
 				<div class="form--container">
-					<contact-form />
+					<contact-form name="contact-us-page" />
 				</div>
 				<div class="info">
 					<div class="info--description">

@@ -1,7 +1,7 @@
 <template>
 	<form
 		class="form"
-		name="this.$router.currentRoute.name"
+		:name="name"
 		method="post"
 		v-on:submit.prevent="handleSubmit"
 		action="/success/"
@@ -11,7 +11,7 @@
 		<input
 			type="hidden"
 			name="form-name"
-			value="this.$router.currentRoute.name"
+			:value="name"
 		/>
 		<p hidden>
 			<label>
@@ -61,6 +61,11 @@ export default {
 		return {
 			formData: {}
 		};
+	},
+	props: {
+		name: {
+			type: String
+		}
 	},
 	methods: {
 		encode(data) {

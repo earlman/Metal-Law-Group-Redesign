@@ -75,7 +75,10 @@ Photo by Philipp Birmes from Pexels.
 							</tbody>
 						</table>
 					</div>
-					<contact-form class="form-component" />
+					<contact-form
+						class="form-component"
+						name="home-page"
+					/>
 				</section>
 			</div>
 			<SectionTitle>
