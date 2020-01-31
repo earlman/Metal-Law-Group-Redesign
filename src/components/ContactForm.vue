@@ -1,6 +1,7 @@
 <template>
 	<form
 		class="form"
+		name="this.$router.currentRoute.name"
 		method="post"
 		v-on:submit.prevent="handleSubmit"
 		action="/success/"
@@ -9,8 +10,8 @@
 	>
 		<input
 			type="hidden"
-			:name="this.$router.currentRoute.name"
-			value="contact"
+			name="form-name"
+			value="this.$router.currentRoute.name"
 		/>
 		<p hidden>
 			<label>
