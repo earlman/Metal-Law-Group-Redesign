@@ -9,7 +9,7 @@
 	>
 		<input
 			type="hidden"
-			name="form-name"
+			:name="this.$router.currentRoute.name"
 			value="contact"
 		/>
 		<p hidden>
