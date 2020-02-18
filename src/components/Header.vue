@@ -27,6 +27,19 @@
 							<li>
 								<g-link to="/employment-law-defense">Employment Law Defense</g-link>
 							</li>
+							<li>
+								<a
+									class="altsite"
+									href="https://www.metal.law"
+									target="_blank"
+								>
+									Transactional Services
+									<br />
+									<p class="menu-details">
+										<em>Business, Entertainment, and Intellectual Property ➡</em>
+									</p>
+								</a>
+							</li>
 						</ul>
 					</li>
 					<li>
@@ -151,6 +164,17 @@ export default {
 
                         li //submenu
                             min-width: 25ch
+
+
+                        .altsite
+                            text-align: center
+                            border-top: 2px solid var(--color-t-b)
+                            border-bottom: 2px solid var(--color-t-b)
+
+                        .menu-details 
+                            margin: 0
+                            *
+                                @include text(sm)
 
         &--hero
 
