@@ -33,7 +33,7 @@
 		</div>
 	</Layout>
 </template>
-
+<!--
 <static-query>
 query Posts {
     posts: allEmployee {
@@ -59,6 +59,7 @@ query Posts {
     }
 }
 </static-query>
+-->
 
 <script>
 import SectionTitle from "~/components/SectionTitle.vue";
