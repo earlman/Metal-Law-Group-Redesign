@@ -43,7 +43,7 @@
 						</ul>
 					</li>
 					<li>
-						<g-link to="/who-we-are">Who We Are</g-link>
+						<g-link to="/who-we-are">Employees</g-link>
 					</li>
 					<li>
 						<g-link to="/contact-us">Contact</g-link>
