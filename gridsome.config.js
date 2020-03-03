@@ -20,7 +20,7 @@ module.exports = {
         {
             use: '@gridsome/source-wordpress',
             options: {
-                baseUrl: 'https://www.metallawgroup.com', // required
+                baseUrl: 'https://www.metallawgroup.online/', // required
                 typeName: 'WordPress', // GraphQL schema name (Optional)
                 apiBase: 'wp-json',
                 perPage: 100, // How many posts to load from server per request (Optional)
