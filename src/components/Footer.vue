@@ -82,7 +82,13 @@
 			<span>{{attribution}}</span>
 		</aside>
 		<aside class="copyright p-copyright">
-			<span>© &nbsp foundations.dev. All Rights Reserved. 2019</span>
+			<span>
+				©&nbsp;
+				<a
+					target="_blank"
+					href="http://www.npfoundations.dev"
+				>foundations</a>. All Rights Reserved. 2019
+			</span>
 		</aside>
 	</footer>
 </template>
@@ -181,7 +187,7 @@ export default {
                 @include space-inline(var(--space-xs))
 
         .copyright
-            @include grid-full
+            @include grid-full           
             text-align: center
             margin-bottom: var(--space-xs)
 
